@@ -1,0 +1,5 @@
+{
+    "flavor": "stg",
+    "appName": "stg_template",
+    "appIdSuffix": ".stg"
+}
