@@ -11,3 +11,6 @@
     - Firebaseの設定がandroid,iOS共にできていないのでやる
         - https://zenn.dev/altiveinc/articles/separating-environments-in-flutter#android%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AB%E7%92%B0%E5%A2%83%E3%82%92%E5%8F%8D%E6%98%A0%E3%81%95%E3%81%9B%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E3%81%93%E3%81%A8
     - appNameをプロジェクト毎に変更する必要があるのでdart_definesの中のjsonファイルのappNameを変更する
+
+- Splash設定
+    - pubspec.yamlのflutter_native_splashに設定したい画像を設定する
