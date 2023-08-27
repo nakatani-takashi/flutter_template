@@ -15,3 +15,9 @@
 - Splash設定
     - pubspec.yamlのflutter_native_splashに設定したい画像を設定する
         - https://pub.dev/packages/flutter_native_splash
+
+- アプリアイコン設定
+    - pubspec.yamlのflutter_launcher_iconsに設定したい画像を設定する
+    - adaptive_icon_foregroundには設定したい画像の50%サイズ+背景透過のものを設定
+    - adaptive_icon_backgroundにはアプリアイコンに設定した画像の背景色と同じ色を設定
+        - https://pub.dev/packages/flutter_launcher_icons
