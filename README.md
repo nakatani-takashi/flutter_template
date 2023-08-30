@@ -29,6 +29,7 @@
     - ボトムナビゲーション実装の参考元
         - https://github.com/hukusuke1007/go_router_sample
         - https://codewithandrea.com/articles/flutter-bottom-navigation-bar-nested-routes-gorouter/
+        - https://zenn.dev/flutteruniv_dev/articles/20220801-135028-flutter-go-router-builder
 
         - https://zenn.dev/pside/articles/9194274980bf76
             - やれたらいいけどできなかった(言語仕様が変わった？？)
