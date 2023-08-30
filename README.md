@@ -26,3 +26,9 @@
     - go_router + go_router_builder
         - https://pub.dev/packages/go_router
         - https://pub.dev/packages/go_router_builder
+
+- ロガー
+    - simple_logger
+        - https://pub.dev/packages/simple_logger
+    - 他の検討候補
+        - https://zenn.dev/flutteruniv_dev/articles/20220413-153500-flutter-logger
