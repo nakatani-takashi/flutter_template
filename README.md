@@ -26,6 +26,8 @@
     - go_router + go_router_builder
         - https://pub.dev/packages/go_router
         - https://pub.dev/packages/go_router_builder
+    - ボトムナビゲーション実装の参考元
+        - https://github.com/hukusuke1007/go_router_sample
 
 - ロガー
     - simple_logger
