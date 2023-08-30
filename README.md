@@ -32,3 +32,11 @@
         - https://pub.dev/packages/simple_logger
     - 他の検討候補
         - https://zenn.dev/flutteruniv_dev/articles/20220413-153500-flutter-logger
+
+- 状態管理
+    - Riverpod v2
+        - https://docs-v2.riverpod.dev/docs/introduction/why_riverpod
+    - freezed
+        - https://pub.dev/packages/freezed
+    - json_serializable
+        - https://pub.dev/packages/json_serializable
