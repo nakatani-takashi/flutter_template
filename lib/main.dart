@@ -35,8 +35,7 @@ class App extends ConsumerWidget {
         primarySwatch: Colors.blue,
         pageTransitionsTheme: const PageTransitionsTheme(
           builders: {
-            TargetPlatform.android:
-                CupertinoPageTransitionsBuilder(), // AndroidもiOSと同じ遷移アニメーションにする
+            TargetPlatform.android:CupertinoPageTransitionsBuilder(), // AndroidもiOSと同じ遷移アニメーションにする
             TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
             TargetPlatform.linux: FadeUpwardsPageTransitionsBuilder(),
             TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
@@ -45,53 +44,6 @@ class App extends ConsumerWidget {
         ),
       ),
       routerConfig: router,
-    );
-  }
-}
-
-// class App extends StatelessWidget {
-//   const App({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp.router(routerConfig: goBottomNavigationRouter);
-//   }
-// }
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // const NextRoute().go(context);
-          },
-          child: const Text('Go to Next'),
-        ),
-      ),
-    );
-  }
-}
-
-class NextScreen extends StatelessWidget {
-  const NextScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Next')),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // const HomeRoute().go(context);
-          },
-          child: const Text('Go to Home'),
-        ),
-      ),
     );
   }
 }
