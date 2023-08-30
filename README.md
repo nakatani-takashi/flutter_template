@@ -30,6 +30,9 @@
         - https://github.com/hukusuke1007/go_router_sample
         - https://codewithandrea.com/articles/flutter-bottom-navigation-bar-nested-routes-gorouter/
 
+        - https://zenn.dev/pside/articles/9194274980bf76
+            - やれたらいいけどできなかった(言語仕様が変わった？？)
+
 - ロガー
     - simple_logger
         - https://pub.dev/packages/simple_logger
