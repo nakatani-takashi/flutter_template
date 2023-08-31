@@ -1,8 +1,11 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_template/navigation/router.dart';
-import 'utils/logger.dart';
+import 'package:flutter_template/utils/logger.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-class CurrentRoute extends Notifier<Uri> {
+part 'current_route.g.dart';
+
+@Riverpod(keepAlive: true)
+class CurrentRoute extends _$CurrentRoute {
   @override
   Uri build() {
     final router = ref.watch(goRouter);
