@@ -43,7 +43,15 @@
 - 状態管理
     - Riverpod v2
         - https://docs-v2.riverpod.dev/docs/introduction/why_riverpod
+    - riverpod_generator
+        - https://pub.dev/packages/riverpod_generator
+        - 参考記事
+            - https://zenn.dev/flutteruniv_dev/articles/riverpod_generator_in_action
     - freezed
         - https://pub.dev/packages/freezed
     - json_serializable
         - https://pub.dev/packages/json_serializable
+
+- api通信
+    - http
+        - https://pub.dev/packages/http
