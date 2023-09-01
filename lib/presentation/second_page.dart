@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_template/main.dart';
-import 'package:flutter_template/navigation/router.dart';
 import 'package:go_router/go_router.dart';
 
+import 'package:flutter_template/main.dart';
+import 'package:flutter_template/navigation/router.dart';
 import '../navigation/second_route.dart';
 import 'third_page.dart';
 
@@ -56,7 +57,9 @@ class SecondPage extends ConsumerWidget {
       floatingActionButton: FloatingActionButton(
         heroTag: null,
         onPressed: () {
-          ref.read(secondPageCountProvider.notifier).update((state) => count + 1);
+          ref
+              .read(secondPageCountProvider.notifier)
+              .update((state) => count + 1);
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

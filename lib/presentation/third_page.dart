@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+
 import 'package:flutter_template/main.dart';
 import 'package:flutter_template/navigation/router.dart';
-import 'package:go_router/go_router.dart';
 import '../navigation/main_route.dart';
 import '../navigation/third_route.dart';
 
@@ -60,7 +62,9 @@ class ThirdPage extends ConsumerWidget {
       floatingActionButton: FloatingActionButton(
         heroTag: null,
         onPressed: () {
-          ref.read(thirdPageCountProvider.notifier).update((state) => count + 1);
+          ref
+              .read(thirdPageCountProvider.notifier)
+              .update((state) => count + 1);
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

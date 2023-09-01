@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_template/main.dart';
 
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'package:flutter_template/main.dart';
 import '../attention_page.dart';
 import '../second_page.dart';
 
