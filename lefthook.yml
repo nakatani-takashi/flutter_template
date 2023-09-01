@@ -1,4 +1,4 @@
-pre-push:
+push:
   parallel: false
   commands:
     linter:
