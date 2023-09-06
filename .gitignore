@@ -48,3 +48,6 @@ app.*.map.json
 /lib/utils/local_properties.dart
 **/.env.dev
 /env/.env.dev
+.env.dev
+env/.env.dev
+.env
