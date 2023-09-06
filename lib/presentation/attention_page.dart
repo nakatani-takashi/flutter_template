@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'package:flutter_template/main.dart';
 import 'package:flutter_template/navigation/router.dart';
+
 import '../navigation/attention_route.dart';
 
 class AttentionPage extends ConsumerWidget {

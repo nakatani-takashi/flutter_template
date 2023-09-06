@@ -55,3 +55,7 @@
 - api通信
     - http
         - https://pub.dev/packages/http
+
+- ローカルプロパティ
+    - flutter_dotenv
+        - https://pub.dev/packages/flutter_dotenv
