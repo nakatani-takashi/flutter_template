@@ -1,4 +1,4 @@
-import 'package:flutter_template/navigation/router.dart';
+import 'package:flutter_template/navigation/provider/go_router_provider.dart';
 import 'package:flutter_template/utils/logger.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -8,7 +8,7 @@ part 'current_route.g.dart';
 class CurrentRoute extends _$CurrentRoute {
   @override
   Uri build() {
-    final router = ref.watch(goRouter);
+    final router = ref.watch(goRouterProvider);
     void listener() {
       final uri = router.routeInformationProvider.value.uri;
       state = uri;
