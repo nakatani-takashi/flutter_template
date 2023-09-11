@@ -20,5 +20,7 @@ linter:
 # https://dart.dev/guides/language/analysis-options
 
 analyzer:
+  plugins:
+    - custom_lint
   errors:
     invalid_annotation_target: ignore
