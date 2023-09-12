@@ -33,6 +33,8 @@
 
         - https://zenn.dev/pside/articles/9194274980bf76
             - やれたらいいけどできなかった(言語仕様が変わった？？)
+    - 型安全な値渡し遷移
+        - https://pub.dev/documentation/go_router/latest/topics/Type-safe%20routes-topic.html
 
 - ロガー
     - simple_logger
