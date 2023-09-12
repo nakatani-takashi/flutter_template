@@ -29,10 +29,10 @@ packages:
     dependency: transitive
     description:
       name: archive
-      sha256: "0c8368c9b3f0abbc193b9d6133649a614204b528982bebc7026372d61677ce3a"
+      sha256: e0902a06f0e00414e4e3438a084580161279f137aeb862274710f29ec10cf01e
       url: "https://pub.dev"
     source: hosted
-    version: "3.3.7"
+    version: "3.3.9"
   args:
     dependency: transitive
     description:
@@ -85,10 +85,10 @@ packages:
     dependency: transitive
     description:
       name: build_resolvers
-      sha256: "6c4dd11d05d056e76320b828a1db0fc01ccd376922526f8e9d6c796a5adbac20"
+      sha256: d912852cce27c9e80a93603db721c267716894462e7033165178b91138587972
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.1"
+    version: "2.3.2"
   build_runner:
     dependency: "direct dev"
     description:
@@ -165,10 +165,10 @@ packages:
     dependency: transitive
     description:
       name: code_builder
-      sha256: "4ad01d6e56db961d29661561effde45e519939fdaeb46c351275b182eac70189"
+      sha256: "315a598c7fbe77f22de1c9da7cfd6fd21816312f16ffa124453b4fc679e540f1"
       url: "https://pub.dev"
     source: hosted
-    version: "4.5.0"
+    version: "4.6.0"
   collection:
     dependency: transitive
     description:
@@ -205,10 +205,10 @@ packages:
     dependency: "direct main"
     description:
       name: cupertino_icons
-      sha256: e35129dc44c9118cee2a5603506d823bab99c68393879edb440e0090d07586be
+      sha256: d57953e10f9f8327ce64a508a355f0b1ec902193f66288e8cb5070e7c47eeb2d
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.5"
+    version: "1.0.6"
   custom_lint:
     dependency: "direct dev"
     description:
@@ -372,18 +372,18 @@ packages:
     dependency: "direct main"
     description:
       name: go_router
-      sha256: "694cb219d9bb7c9d30efce3d8c6ef3782d8ad00ff14e6772a499a860b3c59ccb"
+      sha256: "5668e6d3dbcb2d0dfa25f7567554b88c57e1e3f3c440b672b24d4a9477017d5b"
       url: "https://pub.dev"
     source: hosted
-    version: "10.1.1"
+    version: "10.1.2"
   go_router_builder:
     dependency: "direct dev"
     description:
       name: go_router_builder
-      sha256: "3e7e0ca431abd9089ff82113d8c8790ba2114ff8e3690d40c4fd38394374474d"
+      sha256: "89585f7cf2ddd35a3f05908c5bb54339d3f891fc5aac4f30e2864469d7ddc92b"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.0"
+    version: "2.3.1"
   graphs:
     dependency: transitive
     description:
@@ -668,10 +668,10 @@ packages:
     dependency: "direct main"
     description:
       name: simple_logger
-      sha256: "0b0006199015a81c30041390b91e4c9561079d631541ffc317f76fd1181c9cc7"
+      sha256: bd3f09099a890f5f66cd27a39e5422f4e27b5e7cf4c5a7331569e86d89846898
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.0+2"
+    version: "1.9.0+3"
   sky_engine:
     dependency: transitive
     description: flutter

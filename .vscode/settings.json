@@ -7,7 +7,9 @@
   "editor.rulers": [
     80
   ],
-  "files.autoSave": "off",
+  // "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
   "editor.minimap.enabled": false,
