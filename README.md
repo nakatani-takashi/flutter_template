@@ -57,7 +57,28 @@
 - api通信
     - http
         - https://pub.dev/packages/http
+    - retrofit
+        - https://pub.dev/packages/retrofit
+    - dio
+        - https://pub.dev/packages/dio
+    - retrofit + dioの方が簡潔に書けてイケてるのでこっち使いそう
+        - https://www.egao-inc.co.jp/tech/flutter_retrofit/
+        - テスト
+            - https://zenn.dev/shimizu_saffle/articles/http-mock-adapter
 
 - ローカルプロパティ
     - flutter_dotenv
         - https://pub.dev/packages/flutter_dotenv
+    - envied
+        - https://pub.dev/packages/envied
+        - 型安全に呼び出せるのでこっちのが良さそう(変なinit処理もないし)
+            - https://zenn.dev/8rine23/scraps/f097a9505cbe7b
+
+- アーキテクチャ
+    - 非MVVM
+        - https://techblog.enechain.com/entry/flutter-rearchitecture-from-mvvm
+            - 結構良さそう、ただ統合しないというのは一つのAPIで完結するのであればいいけど複数のAPIを統合する必要がある場合は統合する必要があるので話半分ぐらいに思った方が良さそう
+    - MVVM
+        - https://wasabeef.medium.com/flutter-%E3%82%92-mvvm-%E3%81%A7%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B-861c5dbcc565
+        - https://terupro.net/flutter-mvvm-riverpod-sample/
+        - https://github.com/terupro/clima
