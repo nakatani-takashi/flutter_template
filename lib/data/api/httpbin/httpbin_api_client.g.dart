@@ -8,8 +8,8 @@ part of 'httpbin_api_client.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
-class _TestApiClient implements HttpBinApiClient {
-  _TestApiClient(
+class _HttpBinApiClient implements HttpBinApiClient {
+  _HttpBinApiClient(
     this._dio, {
     this.baseUrl,
   }) {
@@ -29,7 +29,7 @@ class _TestApiClient implements HttpBinApiClient {
       r'Custom-Header': 'Your header',
     };
     _headers.removeWhere((k, v) => v == null);
-    const Map<String, dynamic>? _data = null;
+    final Map<String, dynamic>? _data = null;
     final _result = await _dio
         .fetch<Map<String, dynamic>>(_setStreamType<HttpBinResponse>(Options(
       method: 'GET',
@@ -93,7 +93,7 @@ class _TestApiClient implements HttpBinApiClient {
       r'Custom-Header': 'Your header',
     };
     _headers.removeWhere((k, v) => v == null);
-    const Map<String, dynamic>? _data = null;
+    final Map<String, dynamic>? _data = null;
     final _result = await _dio
         .fetch<Map<String, dynamic>>(_setStreamType<HttpBinResponse>(Options(
       method: 'GET',

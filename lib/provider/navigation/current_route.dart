@@ -1,4 +1,4 @@
-import 'package:flutter_template/navigation/provider/go_router_provider.dart';
+import 'package:flutter_template/provider/navigation/go_router_provider.dart';
 import 'package:flutter_template/util/logger.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

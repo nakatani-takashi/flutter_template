@@ -7,7 +7,7 @@ part 'httpbin_api_client.g.dart';
 
 @RestApi(baseUrl: HttpBinApiConst.baseUrl) // APIのベースURL
 abstract class HttpBinApiClient {
-  factory HttpBinApiClient(Dio dio, {String baseUrl}) = _TestApiClient;
+  factory HttpBinApiClient(Dio dio, {String baseUrl}) = _HttpBinApiClient;
 
   static const _headers = <String, dynamic>{
     // ヘッダー使用例
