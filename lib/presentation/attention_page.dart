@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_template/main.dart';
 import 'package:flutter_template/navigation/router.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../navigation/attention_route.dart';
 

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
-
 import 'package:flutter_template/main.dart';
 import 'package:flutter_template/navigation/router.dart';
-import '../navigation/second_route.dart';
-import 'third_page.dart';
+import 'package:flutter_template/navigation/second_route.dart';
+import 'package:flutter_template/presentation/third_page.dart';
+import 'package:go_router/go_router.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class SecondPage extends ConsumerWidget {
   const SecondPage({

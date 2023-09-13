@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
-
 import 'package:flutter_template/main.dart';
+import 'package:flutter_template/navigation/main_route.dart';
 import 'package:flutter_template/navigation/router.dart';
-import '../navigation/main_route.dart';
-import '../navigation/third_route.dart';
+import 'package:flutter_template/navigation/third_route.dart';
+import 'package:go_router/go_router.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+
 
 class ThirdPage extends ConsumerWidget {
   const ThirdPage({

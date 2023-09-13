@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_template/navigation/animation/platform_animation.dart';
 import 'package:flutter_template/navigation/provider/go_router_provider.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class App extends ConsumerWidget {
   const App({super.key});

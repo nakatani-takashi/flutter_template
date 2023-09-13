@@ -20,6 +20,9 @@ linter:
 # https://dart.dev/guides/language/analysis-options
 
 analyzer:
+  exclude:
+    - "**/*.freezed.dart"
+    - "**/*.g.dart"
   plugins:
     - custom_lint
   errors:
