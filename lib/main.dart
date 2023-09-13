@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/app.dart';
-import 'package:flutter_template/utils/logger.dart';
+import 'package:flutter_template/util/logger.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final tab1PageCountProvider = StateProvider.autoDispose((ref) => 0);

@@ -1,5 +1,5 @@
 import 'package:flutter_template/navigation/provider/go_router_provider.dart';
-import 'package:flutter_template/utils/logger.dart';
+import 'package:flutter_template/util/logger.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'current_route.g.dart';

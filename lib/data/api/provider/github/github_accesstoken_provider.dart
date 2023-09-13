@@ -1,6 +1,6 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import 'package:flutter_template/utils/local_properties.dart';
+import 'package:flutter_template/util/local_properties.dart';
 
 part 'github_accesstoken_provider.g.dart';
 
