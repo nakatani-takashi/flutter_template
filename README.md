@@ -66,6 +66,12 @@
         - テスト
             - https://zenn.dev/shimizu_saffle/articles/http-mock-adapter
 
+- ローカルDB
+    - shared_preferences
+        - https://pub.dev/packages/shared_preferences
+        - 参考記事
+            - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction-archive/viewer/v0-shared-preferences
+
 - ローカルプロパティ
     - flutter_dotenv
         - https://pub.dev/packages/flutter_dotenv
