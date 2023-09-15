@@ -71,6 +71,8 @@
         - https://pub.dev/packages/shared_preferences
         - 参考記事
             - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction-archive/viewer/v0-shared-preferences
+            - https://zenn.dev/chmod644/articles/baf559e46a0794
+            - https://blog.dalt.me/2356
 
 - ローカルプロパティ
     - flutter_dotenv
