@@ -12,14 +12,12 @@ class App extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(goRouterProvider);
     final appState = ref.watch(httpbinAppStateProvider);
-    appState.getHttpBin("ホゲホゲ").then((value) {
-      value.when(
-          success: (success) {
-            logger.info("success: $success"); // 成功時
-          },
-          failure: (failure) {
-            logger.warning("error: ${failure.message}");
-          });
+    appState.getHttpBin("hogehoge").then((value) {
+      value.when(success: (success) {
+        logger.info("success: $success"); // 成功時
+      }, failure: (failure) {
+        logger.warning("error: ${failure.message}");
+      });
     });
     return MaterialApp.router(
       title: 'go_router sample',

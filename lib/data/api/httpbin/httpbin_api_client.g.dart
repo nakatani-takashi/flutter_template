@@ -21,12 +21,16 @@ class _HttpBinApiClient implements HttpBinApiClient {
   String? baseUrl;
 
   @override
-  Future<HttpBinResponse> getTest(String id) async {
+  Future<HttpBinResponse> getTest(
+    String id,
+    String header,
+  ) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{r'id': id};
     final _headers = <String, dynamic>{
       r'Content-Type': 'application/json',
       r'Custom-Header': 'Your header',
+      r'uhyoyoyoy': header,
     };
     _headers.removeWhere((k, v) => v == null);
     final Map<String, dynamic>? _data = null;

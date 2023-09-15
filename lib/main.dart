@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/app.dart';
 import 'package:flutter_template/util/logger.dart';
+import 'package:flutter_template/util/shared_preferences/preference_key_type.dart';
 import 'package:flutter_template/util/shared_preferences/shared_preferences_instance.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -31,7 +32,8 @@ Future main() async {
   //https://api.flutter.dev/flutter/widgets/WidgetsFlutterBinding-class.html
   //https://qiita.com/kurun_pan/items/04f34a47cc8cee0fe542
   WidgetsFlutterBinding.ensureInitialized();
-  SharedPreferencesInstance.initialize(); //SharedPreferencesInstanceの初期化
+  await SharedPreferencesInstance.initialize(); //SharedPreferencesInstanceの初期化
   Logger.configure();
+  PreferenceKeyType.userId.setString("hogehoge");
   runApp(const ProviderScope(child: App()));
 }

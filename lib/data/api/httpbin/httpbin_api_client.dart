@@ -17,7 +17,7 @@ abstract class HttpBinApiClient {
 
   @GET(HttpBinApiConst.get) // HttpメソッドをGET
   @Headers(_headers) // ヘッダー情報
-  Future<HttpBinResponse> getTest(@Query("id") String id); // リクエスト関数の形式を記載
+  Future<HttpBinResponse> getTest(@Query("id") String id, @Header("uhyoyoyoy") String header); // リクエスト関数の形式を記載
 
   @POST(HttpBinApiConst.post) // HttpメソッドをPOST
   @Headers(_headers) // ヘッダー情報

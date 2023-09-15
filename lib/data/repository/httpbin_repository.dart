@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_template/data/api/httpbin/httpbin_api_client.dart';
 import 'package:flutter_template/domain/entity/httpbin/response/httpbin_response.dart';
 import 'package:flutter_template/domain/entity/retrofit/result.dart';
+import 'package:flutter_template/util/shared_preferences/preference_key_type.dart';
 
 abstract class _HttpBinRepository {
   Future<Result<HttpBinResponse>> getHttpBin(String id);
@@ -18,7 +19,7 @@ class HttpBinRepository implements _HttpBinRepository {
   @override
   Future<Result<HttpBinResponse>> getHttpBin(String id) {
     return _client
-        .getTest(id) // getTest実行
+        .getTest(id, PreferenceKeyType.userId.getString()?? "") // getTest実行
         .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
         .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
   }
