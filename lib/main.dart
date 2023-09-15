@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_template/app.dart';
 import 'package:flutter_template/provider/common/shared_preferences_provider.dart';
 import 'package:flutter_template/util/logger.dart';
+import 'package:flutter_template/util/shared_preferences/shared_preferences_instance.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 final tab1PageCountProvider = StateProvider.autoDispose((ref) => 0);
 final tab2PageCountProvider = StateProvider.autoDispose((ref) => 0);
@@ -32,11 +32,7 @@ Future main() async {
   //https://api.flutter.dev/flutter/widgets/WidgetsFlutterBinding-class.html
   //https://qiita.com/kurun_pan/items/04f34a47cc8cee0fe542
   WidgetsFlutterBinding.ensureInitialized();
+  SharedPreferencesInstance.initialize(); //SharedPreferencesInstanceの初期化
   Logger.configure();
-  runApp(ProviderScope(overrides: [
-    sharedPreferencesProvider.overrideWithValue(
-      // ここでインスタンス化してSharedPreferencesの初期化
-      await SharedPreferences.getInstance(),
-    )
-  ], child: const App()));
+  runApp(const ProviderScope(child: App()));
 }
