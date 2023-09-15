@@ -11,7 +11,7 @@ class App extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(goRouterProvider);
-    final appState = ref.watch(httpbinAppStateProvider);
+    final appState = ref.watch(httpbinRepositoryAppStateProvider);
     appState.getHttpBin("hogehoge").then((value) {
       value.when(success: (success) {
         logger.info("success: $success"); // 成功時

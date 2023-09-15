@@ -4,5 +4,5 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'httpbin_appstate.g.dart';
 
 @riverpod
-HttpBinRepository httpbinAppState(HttpbinAppStateRef ref) =>
+HttpBinRepository httpbinRepositoryAppState(HttpbinRepositoryAppStateRef ref) =>
     HttpBinRepository();
