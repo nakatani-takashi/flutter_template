@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/app.dart';
-import 'package:flutter_template/provider/common/shared_preferences_provider.dart';
 import 'package:flutter_template/util/logger.dart';
 import 'package:flutter_template/util/shared_preferences/shared_preferences_instance.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
