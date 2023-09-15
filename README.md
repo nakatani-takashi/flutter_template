@@ -73,6 +73,9 @@
             - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction-archive/viewer/v0-shared-preferences
             - https://zenn.dev/chmod644/articles/baf559e46a0794
             - https://blog.dalt.me/2356
+    - flutter_secure_storage
+        - https://pub.dev/packages/flutter_secure_storage
+        - shared_preferencesが平文保存なのでセキュア情報を扱うならこっちを使うしかない
 
 - ローカルプロパティ
     - flutter_dotenv
