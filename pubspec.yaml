@@ -74,6 +74,8 @@ flutter_native_splash:
   image: "assets/images/template.png"
   color_dark: "#262626"
   image_dark: "assets/images/template.png"
+  branding: "assets/images/branding.png"
+  branding_mode: bottom
 
   # Android12以上はAndroidOS側でアプリアイコンをスプラッシュ表示してしまうので以下の通り設定が必要
   android_12:
@@ -81,3 +83,5 @@ flutter_native_splash:
     icon_background_color: "#eeeeee"
     image_dark: "assets/images/template.png"
     icon_background_color_dark: "#262626"
+    branding: "assets/images/branding.png"
+    branding_mode: bottom
