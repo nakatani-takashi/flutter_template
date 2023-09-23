@@ -15,6 +15,8 @@
 - Splash設定
     - pubspec.yamlのflutter_native_splashに設定したい画像を設定する
         - https://pub.dev/packages/flutter_native_splash
+        - 参考記事
+            - https://zenn.dev/flutteruniv_dev/articles/20220406-061305-flutter-native-splash
 
 - アプリアイコン設定
     - pubspec.yamlのflutter_launcher_iconsに設定したい画像を設定する
