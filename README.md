@@ -95,3 +95,7 @@
         - https://wasabeef.medium.com/flutter-%E3%82%92-mvvm-%E3%81%A7%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B-861c5dbcc565
         - https://terupro.net/flutter-mvvm-riverpod-sample/
         - https://github.com/terupro/clima
+
+    - MVC(？)
+        - https://codewithandrea.com/articles/data-mutations-riverpod/
+        - 名前がよくわからんけどこのような感じでやるのがよさそうに感じる
