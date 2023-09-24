@@ -1,28 +1,25 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'httpbin_appstate.dart';
+part of 'httpbin_api_client.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$httpbinRepositoryAppStateHash() =>
-    r'132a239c111ea341c1b45441aa009d41861ee943';
+String _$httpbinApiClientHash() => r'9b2a783aa8e2ac86d0075d05eaa12890b652c8d0';
 
-/// See also [httpbinRepositoryAppState].
-@ProviderFor(httpbinRepositoryAppState)
-final httpbinRepositoryAppStateProvider =
-    AutoDisposeProvider<HttpBinRepository>.internal(
-  httpbinRepositoryAppState,
-  name: r'httpbinRepositoryAppStateProvider',
+/// See also [httpbinApiClient].
+@ProviderFor(httpbinApiClient)
+final httpbinApiClientProvider = Provider<AbstractHttpBinApiClient>.internal(
+  httpbinApiClient,
+  name: r'httpbinApiClientProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$httpbinRepositoryAppStateHash,
+      : _$httpbinApiClientHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef HttpbinRepositoryAppStateRef
-    = AutoDisposeProviderRef<HttpBinRepository>;
+typedef HttpbinApiClientRef = ProviderRef<AbstractHttpBinApiClient>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

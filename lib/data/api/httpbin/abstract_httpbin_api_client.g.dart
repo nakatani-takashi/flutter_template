@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'httpbin_api_client.dart';
+part of 'abstract_httpbin_api_client.dart';
 
 // **************************************************************************
 // RetrofitGenerator
@@ -8,8 +8,8 @@ part of 'httpbin_api_client.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
 
-class _HttpBinApiClient implements HttpBinApiClient {
-  _HttpBinApiClient(
+class _AbstractHttpBinApiClient implements AbstractHttpBinApiClient {
+  _AbstractHttpBinApiClient(
     this._dio, {
     this.baseUrl,
   }) {
@@ -21,16 +21,12 @@ class _HttpBinApiClient implements HttpBinApiClient {
   String? baseUrl;
 
   @override
-  Future<HttpBinResponse> getTest(
-    String id,
-    String header,
-  ) async {
+  Future<HttpBinResponse> getTest(String id) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{r'id': id};
     final _headers = <String, dynamic>{
       r'Content-Type': 'application/json',
       r'Custom-Header': 'Your header',
-      r'uhyoyoyoy': header,
     };
     _headers.removeWhere((k, v) => v == null);
     final Map<String, dynamic>? _data = null;
@@ -89,7 +85,7 @@ class _HttpBinApiClient implements HttpBinApiClient {
   }
 
   @override
-  Future<HttpBinResponse> error() async {
+  Future<HttpBinResponse> errorTest() async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{
