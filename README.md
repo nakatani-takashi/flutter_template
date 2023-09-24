@@ -60,6 +60,7 @@
             - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction/viewer/introduction
             - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction-archive
             - https://zenn.dev/flutteruniv_dev/articles/riverpod_generator_in_action
+            - https://zenn.dev/koji_1009/articles/18a8a54b615ae7
 
     - riverpod_generator
         - https://pub.dev/packages/riverpod_generator
