@@ -2,6 +2,10 @@
 
 ## 環境構築
 
+- コーディング規約
+    - 参考記事
+        - https://qiita.com/simonritchie/items/daa7c58778660696417e
+
 - FVM
     - https://zenn.dev/welchi/articles/d8f120adeebc7a85ed17
         - FVMをデフォルトのFlutterとしておくと楽なのでそこまでやる
@@ -37,6 +41,9 @@
             - やれたらいいけどできなかった(言語仕様が変わった？？)
     - 型安全な値渡し遷移
         - https://pub.dev/documentation/go_router/latest/topics/Type-safe%20routes-topic.html
+    - 参考記事
+        - https://migisanblog.com/flutter-go-router-use/
+
 
 - ロガー
     - simple_logger
@@ -47,6 +54,13 @@
 - 状態管理
     - Riverpod v2
         - https://docs-v2.riverpod.dev/docs/introduction/why_riverpod
+        - 参考記事
+            - https://zenn.dev/10_tofu_01/articles/try_riverpod_generator
+            - https://zenn.dev/chmod644/articles/baf559e46a0794
+            - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction/viewer/introduction
+            - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction-archive
+            - https://zenn.dev/flutteruniv_dev/articles/riverpod_generator_in_action
+
     - riverpod_generator
         - https://pub.dev/packages/riverpod_generator
         - 参考記事
@@ -78,6 +92,8 @@
     - flutter_secure_storage
         - https://pub.dev/packages/flutter_secure_storage
         - shared_preferencesが平文保存なのでセキュア情報を扱うならこっちを使うしかない
+    - 参考記事
+        - https://medium.com/@mustafatahirhussein/shared-preferences-or-flutter-secure-storage-which-is-better-to-use-e6b6a0a4fcfc
 
 - ローカルプロパティ
     - flutter_dotenv
