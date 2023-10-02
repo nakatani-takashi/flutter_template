@@ -1,5 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:flutter_template/util/secure_storage/secure_storage_instance.dart';
+import 'package:flutter_template/data/local/secure_storage/secure_storage_instance.dart';
 
 enum SecureStorageKeyType { userId, authenticationToken }
 

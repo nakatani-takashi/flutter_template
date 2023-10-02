@@ -1,4 +1,4 @@
-import 'package:flutter_template/util/shared_preferences/shared_preferences_instance.dart';
+import 'package:flutter_template/data/local/shared_preferences/shared_preferences_instance.dart';
 
 enum PreferenceKeyType { userId, authenticationToken }
 
