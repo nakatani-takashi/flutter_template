@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_template/presentation/page/second_page.dart';
 import 'package:go_router/go_router.dart';
-
-import '../second_page.dart';
 
 class SecondRoute extends GoRouteData {
   const SecondRoute({

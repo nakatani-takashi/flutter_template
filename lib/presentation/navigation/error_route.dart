@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/presentation/page/error_page.dart';
 import 'package:go_router/go_router.dart';
-
-import '../error_page.dart';
 
 class ErrorRoute extends GoRouteData {
   ErrorRoute({required this.error});

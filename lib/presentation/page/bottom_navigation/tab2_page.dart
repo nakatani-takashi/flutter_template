@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/main.dart';
-import 'package:flutter_template/presentation/attention_page.dart';
-import 'package:flutter_template/presentation/second_page.dart';
+import 'package:flutter_template/presentation/page/attention_page.dart';
+import 'package:flutter_template/presentation/page/second_page.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class Tab2Page extends ConsumerWidget {

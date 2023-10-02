@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_template/presentation/page/third_page.dart';
 import 'package:go_router/go_router.dart';
-
-import '../third_page.dart';
 
 class ThirdRoute extends GoRouteData {
   const ThirdRoute();

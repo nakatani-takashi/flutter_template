@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_template/presentation/page/bottom_navigation/tab1_page.dart';
 import 'package:go_router/go_router.dart';
-
-import '../bottom_navigation/tab1_page.dart';
 
 class Tab1Route extends GoRouteData {
   const Tab1Route();
