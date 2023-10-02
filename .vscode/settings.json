@@ -42,7 +42,6 @@
   "files.watcherExclude": {
     "**/.fvm": true
   },
-  "git.autofetch": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
