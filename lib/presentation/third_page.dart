@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/main.dart';
-import 'package:flutter_template/navigation/main_route.dart';
-import 'package:flutter_template/navigation/router.dart';
-import 'package:flutter_template/navigation/third_route.dart';
+import 'package:flutter_template/presentation/navigation/main_route.dart';
+import 'package:flutter_template/presentation/navigation/router.dart';
+import 'package:flutter_template/presentation/navigation/third_route.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

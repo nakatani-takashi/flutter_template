@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart' hide Headers; // ヘッダーを使用しない場合はhide以降を削除
-import 'package:flutter_template/domain/entity/httpbin/const/httpbin_api_const.dart';
+import 'package:flutter_template/const/httpbin/httpbin_api_const.dart';
 import 'package:flutter_template/domain/entity/httpbin/response/httpbin_response.dart';
 import 'package:retrofit/http.dart';
 

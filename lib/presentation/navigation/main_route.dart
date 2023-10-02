@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../presentation/bottom_navigation/bottom_navigation_bar.dart';
+import '../bottom_navigation/bottom_navigation_bar.dart';
 import 'router.dart';
 import 'tab1_route.dart';
 
