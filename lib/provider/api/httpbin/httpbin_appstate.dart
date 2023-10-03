@@ -5,5 +5,5 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'httpbin_appstate.g.dart';
 
 @riverpod
-HttpBinRepository httpbinRepositoryAppState(HttpbinRepositoryAppStateRef ref) =>
+HttpBinRepository httpbinRepository(HttpbinRepositoryRef ref) =>
     HttpBinRepository(client: ref.watch(httpbinApiClientProvider));

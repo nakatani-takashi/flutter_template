@@ -14,7 +14,7 @@ class App extends ConsumerWidget {
     final router = ref.watch(goRouterProvider);
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      final appState = ref.watch(httpbinRepositoryAppStateProvider);
+      final appState = ref.watch(httpbinRepositoryProvider);
       final userToken = ref.watch(userTokenProvider.notifier);
       userToken.updateToken("updateToken");
       appState.getHttpBin("hogehoge").then((value) {
