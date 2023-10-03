@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'httpbin_appstate.dart';
+part of 'httpbin_repository_provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator

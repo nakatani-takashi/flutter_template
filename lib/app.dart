@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/presentation/navigation/animation/platform_animation.dart';
 import 'package:flutter_template/provider/api/core/user_token.dart';
-import 'package:flutter_template/provider/api/httpbin/httpbin_appstate.dart';
+import 'package:flutter_template/provider/api/httpbin/httpbin_repository_provider.dart';
 import 'package:flutter_template/provider/navigation/go_router_provider.dart';
 import 'package:flutter_template/util/logger.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
