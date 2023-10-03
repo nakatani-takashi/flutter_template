@@ -12,7 +12,7 @@ class CurrentRoute extends _$CurrentRoute {
     void listener() {
       final uri = router.routeInformationProvider.value.uri;
       state = uri;
-      logger.info(uri);
+      logger.i(uri);
 
       // todo: Analyticsへログを送信等
     }
@@ -23,7 +23,7 @@ class CurrentRoute extends _$CurrentRoute {
     });
 
     final uri = router.routeInformationProvider.value.uri;
-    logger.info(uri);
+    logger.i(uri);
     // todo: Analyticsへログを送信等
     return uri;
   }

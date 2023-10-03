@@ -19,9 +19,9 @@ class App extends ConsumerWidget {
       userToken.updateToken("updateToken");
       appState.getHttpBin("hogehoge").then((value) {
         value.when(success: (success) {
-          logger.info("success: $success"); // 成功時
+          logger.i("success: $success"); // 成功時
         }, failure: (failure) {
-          logger.warning("error: ${failure.message}");
+          logger.w("error: ${failure.message}");
         });
       });
     });
