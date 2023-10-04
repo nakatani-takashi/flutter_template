@@ -14,7 +14,7 @@ class CurrentRoute extends _$CurrentRoute {
       state = uri;
       logger.i(uri);
 
-      // todo: Analyticsへログを送信等
+      // to-do: Analyticsへログを送信等
     }
 
     router.routerDelegate.addListener(listener);
@@ -24,7 +24,7 @@ class CurrentRoute extends _$CurrentRoute {
 
     final uri = router.routeInformationProvider.value.uri;
     logger.i(uri);
-    // todo: Analyticsへログを送信等
+    // to-do: Analyticsへログを送信等
     return uri;
   }
 }

@@ -16,29 +16,29 @@ class StartUpPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     /// currentRouteを活性化させる
     ref.watch(currentRouteProvider);
-    final asyncValue = ref.watch(getHttpbinResponseProvider("hogehoge"));
+    final asyncValue = ref.watch(getHttpbinResponseProvider('hogehoge'));
     final usecase = ref.watch(httpbinControllerProvider.notifier);
     final usecaseState = ref.watch(httpbinControllerProvider);
     final userToken = ref.watch(userTokenProvider.notifier);
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      userToken.updateToken("updateToken");
+      userToken.updateToken('updateToken');
       asyncValue.when(
-          data: (data) => {logger.i("success: $data")},
-          error: (error, _) => {logger.w("error: $error")},
-          loading: () => {logger.i("loading: loading")});
+          data: (data) => {logger.i('success: $data')},
+          error: (error, _) => {logger.w('error: $error')},
+          loading: () => {logger.i('loading: loading')},);
 
       usecaseState.when(
-          data: (data) => {logger.i("usecase: success")},
-          error: (error, _) => {logger.w("usecase: error: $error")},
-          loading: () => {logger.i("usecase: loading")});
+          data: (data) => {logger.i('usecase: success')},
+          error: (error, _) => {logger.w('usecase: error: $error')},
+          loading: () => {logger.i('usecase: loading')},);
     });
 
     return Scaffold(
       body: Center(
         child: ElevatedButton(
           child: const Text(
-            "go main",
+            'go main',
             style: TextStyle(color: Colors.white),
           ),
           onPressed: () {

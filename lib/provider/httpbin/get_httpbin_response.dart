@@ -6,6 +6,8 @@ part 'get_httpbin_response.g.dart';
 
 @riverpod
 Future<HttpBinResponse> getHttpbinResponse(
-    GetHttpbinResponseRef ref, String id) async {
-  return await ref.watch(httpbinRepositoryProvider).getHttpBin(id);
+  GetHttpbinResponseRef ref,
+  String id,
+) async {
+  return ref.watch(httpbinRepositoryProvider).getHttpBin(id);
 }

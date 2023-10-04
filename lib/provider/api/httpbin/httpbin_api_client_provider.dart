@@ -8,6 +8,6 @@ part 'httpbin_api_client_provider.g.dart';
 @Riverpod(keepAlive: true)
 AbstractHttpBinApiClient httpbinApiClient(HttpbinApiClientRef ref) {
   final dio = Dio();
-  dio.options.headers["User-Token"] = ref.watch(userTokenProvider);
+  dio.options.headers['User-Token'] = ref.watch(userTokenProvider);
   return AbstractHttpBinApiClient(dio);
 }

@@ -12,7 +12,7 @@ extension PreferenceKeyTypeEx on PreferenceKeyType {
   }
 
   Future<bool> setInt(int value) async {
-    return await SharedPreferencesInstance().prefs.setInt(keyString, value);
+    return SharedPreferencesInstance().prefs.setInt(keyString, value);
   }
 
   int? getInt({int? defaultValue}) {
@@ -24,7 +24,7 @@ extension PreferenceKeyTypeEx on PreferenceKeyType {
   }
 
   Future<bool> setString(String value) async {
-    return await SharedPreferencesInstance().prefs.setString(keyString, value);
+    return SharedPreferencesInstance().prefs.setString(keyString, value);
   }
 
   String? getString({String? defaultValue}) {
@@ -35,8 +35,8 @@ extension PreferenceKeyTypeEx on PreferenceKeyType {
     }
   }
 
-  Future<bool> setBool(bool value) async {
-    return await SharedPreferencesInstance().prefs.setBool(keyString, value);
+  Future<bool> setBool({required bool setBool}) async {
+    return SharedPreferencesInstance().prefs.setBool(keyString, setBool);
   }
 
   bool getBool() {

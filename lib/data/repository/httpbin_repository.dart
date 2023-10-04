@@ -16,22 +16,16 @@ class HttpBinRepository implements _HttpBinRepository {
 
   @override
   Future<HttpBinResponse> getHttpBin(String id) async {
-    return await client.getTest(id); // getTest実行
-    // .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
-    // .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
+    return client.getTest(id);
   }
 
   @override
   Future<HttpBinResponse> postHttpBin(String id) async {
-    return await client.postTest(id); // postTest実行
-    // .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
-    // .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
+    return client.postTest(id);
   }
 
   @override
   Future<HttpBinResponse> errorHttpBin() async {
-    return await client.errorTest(); // error実行
-    // .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
-    // .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
+    return client.errorTest();
   }
 }

@@ -5,13 +5,14 @@ part 'user_token.g.dart';
 @Riverpod(keepAlive: true)
 class UserToken extends _$UserToken {
   @override
-  String build() => "";
+  String build() => '';
 
+  // ignore: use_setters_to_change_properties
   void updateToken(String token) {
     state = token;
   }
 
   void deleteToken() {
-    state = "";
+    state = '';
   }
 }

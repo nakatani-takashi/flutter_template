@@ -13,7 +13,9 @@ class App extends ConsumerWidget {
     return MaterialApp.router(
       title: 'go_router sample',
       theme: ThemeData(
-          primarySwatch: Colors.blue, pageTransitionsTheme: platformAnimation),
+        primarySwatch: Colors.blue,
+        pageTransitionsTheme: platformAnimation,
+      ),
       routerConfig: router,
     );
   }
