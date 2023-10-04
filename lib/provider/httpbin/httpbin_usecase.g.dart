@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'httpbin_controller.dart';
+part of 'httpbin_usecase.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$httpbinControllerHash() => r'f111001af1e51b4ec67e6b4c18944a9a7a1c80de';
+String _$httpbinControllerHash() => r'3b44dbf8b4ef0e570f82c6caf47e14c72cc70024';
 
 /// See also [HttpbinController].
 @ProviderFor(HttpbinController)

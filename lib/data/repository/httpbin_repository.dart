@@ -1,11 +1,10 @@
 import 'package:flutter_template/data/api/httpbin/abstract_httpbin_api_client.dart';
 import 'package:flutter_template/domain/httpbin/response/httpbin_response.dart';
-import 'package:flutter_template/domain/core/api/retrofit/result.dart';
 
 abstract class _HttpBinRepository {
-  Future<Result<HttpBinResponse>> getHttpBin(String id);
-  Future<Result<HttpBinResponse>> postHttpBin(String id);
-  Future<Result<HttpBinResponse>> errorHttpBin();
+  Future<HttpBinResponse> getHttpBin(String id);
+  Future<HttpBinResponse> postHttpBin(String id);
+  Future<HttpBinResponse> errorHttpBin();
 }
 
 class HttpBinRepository implements _HttpBinRepository {
@@ -16,26 +15,23 @@ class HttpBinRepository implements _HttpBinRepository {
   final AbstractHttpBinApiClient client;
 
   @override
-  Future<Result<HttpBinResponse>> getHttpBin(String id) {
-    return client
-        .getTest(id) // getTest実行
-        .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
-        .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
+  Future<HttpBinResponse> getHttpBin(String id) async {
+    return await client.getTest(id); // getTest実行
+    // .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
+    // .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
   }
 
   @override
-  Future<Result<HttpBinResponse>> postHttpBin(String id) {
-    return client
-        .postTest(id) // postTest実行
-        .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
-        .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
+  Future<HttpBinResponse> postHttpBin(String id) async {
+    return await client.postTest(id); // postTest実行
+    // .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
+    // .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
   }
 
   @override
-  Future<Result<HttpBinResponse>> errorHttpBin() {
-    return client
-        .errorTest() // error実行
-        .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
-        .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
+  Future<HttpBinResponse> errorHttpBin() async {
+    return await client.errorTest(); // error実行
+    // .then((test) => Result<HttpBinResponse>.success(test)) // 成功時
+    // .catchError((error) => Result<HttpBinResponse>.failure(error)); // 失敗時
   }
 }

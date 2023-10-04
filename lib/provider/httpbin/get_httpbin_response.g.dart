@@ -7,7 +7,7 @@ part of 'get_httpbin_response.dart';
 // **************************************************************************
 
 String _$getHttpbinResponseHash() =>
-    r'1850717ee1a8c75b34818bb0ab2c2aebcbb38cd8';
+    r'2d52a951743396a555e9b2b2f6e5306828e260e0';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -35,8 +35,7 @@ class _SystemHash {
 const getHttpbinResponseProvider = GetHttpbinResponseFamily();
 
 /// See also [getHttpbinResponse].
-class GetHttpbinResponseFamily
-    extends Family<AsyncValue<Result<HttpBinResponse>>> {
+class GetHttpbinResponseFamily extends Family<AsyncValue<HttpBinResponse>> {
   /// See also [getHttpbinResponse].
   const GetHttpbinResponseFamily();
 
@@ -75,7 +74,7 @@ class GetHttpbinResponseFamily
 
 /// See also [getHttpbinResponse].
 class GetHttpbinResponseProvider
-    extends AutoDisposeFutureProvider<Result<HttpBinResponse>> {
+    extends AutoDisposeFutureProvider<HttpBinResponse> {
   /// See also [getHttpbinResponse].
   GetHttpbinResponseProvider(
     String id,
@@ -110,8 +109,7 @@ class GetHttpbinResponseProvider
 
   @override
   Override overrideWith(
-    FutureOr<Result<HttpBinResponse>> Function(GetHttpbinResponseRef provider)
-        create,
+    FutureOr<HttpBinResponse> Function(GetHttpbinResponseRef provider) create,
   ) {
     return ProviderOverride(
       origin: this,
@@ -128,7 +126,7 @@ class GetHttpbinResponseProvider
   }
 
   @override
-  AutoDisposeFutureProviderElement<Result<HttpBinResponse>> createElement() {
+  AutoDisposeFutureProviderElement<HttpBinResponse> createElement() {
     return _GetHttpbinResponseProviderElement(this);
   }
 
@@ -146,14 +144,13 @@ class GetHttpbinResponseProvider
   }
 }
 
-mixin GetHttpbinResponseRef
-    on AutoDisposeFutureProviderRef<Result<HttpBinResponse>> {
+mixin GetHttpbinResponseRef on AutoDisposeFutureProviderRef<HttpBinResponse> {
   /// The parameter `id` of this provider.
   String get id;
 }
 
 class _GetHttpbinResponseProviderElement
-    extends AutoDisposeFutureProviderElement<Result<HttpBinResponse>>
+    extends AutoDisposeFutureProviderElement<HttpBinResponse>
     with GetHttpbinResponseRef {
   _GetHttpbinResponseProviderElement(super.provider);
 
