@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'app_lifecycle.g.dart';
+part 'app_lifecycle_state_provider.g.dart';
 
 class _AppLifecycleObserver extends WidgetsBindingObserver {
   _AppLifecycleObserver(this._didChangeState);
@@ -16,7 +16,7 @@ class _AppLifecycleObserver extends WidgetsBindingObserver {
 }
 
 @riverpod
-AppLifecycleState appLifecycle(AppLifecycleRef ref) {
+AppLifecycleState appLifecycleState(AppLifecycleStateRef ref) {
   final observer = _AppLifecycleObserver((value) => ref.state = value);
 
   final binding = WidgetsBinding.instance..addObserver(observer);

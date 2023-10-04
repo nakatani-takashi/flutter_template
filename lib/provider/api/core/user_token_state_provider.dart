@@ -1,9 +1,9 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'user_token.g.dart';
+part 'user_token_state_provider.g.dart';
 
 @Riverpod(keepAlive: true)
-class UserToken extends _$UserToken {
+class UserTokenState extends _$UserTokenState {
   @override
   String build() => '';
 

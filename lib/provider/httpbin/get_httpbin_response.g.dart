@@ -7,7 +7,7 @@ part of 'get_httpbin_response.dart';
 // **************************************************************************
 
 String _$getHttpbinResponseHash() =>
-    r'2d52a951743396a555e9b2b2f6e5306828e260e0';
+    r'ad5ed1fd4c2ca867cdd9e2766011db8357fc65f2';
 
 /// Copied from Dart SDK
 class _SystemHash {

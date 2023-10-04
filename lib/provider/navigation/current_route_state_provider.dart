@@ -2,10 +2,10 @@ import 'package:flutter_template/provider/navigation/go_router_provider.dart';
 import 'package:flutter_template/util/logger.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'current_route.g.dart';
+part 'current_route_state_provider.g.dart';
 
 @Riverpod(keepAlive: true)
-class CurrentRoute extends _$CurrentRoute {
+class CurrentRouteState extends _$CurrentRouteState {
   @override
   Uri build() {
     final router = ref.watch(goRouterProvider);
