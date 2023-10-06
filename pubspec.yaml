@@ -30,6 +30,7 @@ dependencies:
   package_info_plus: ^4.1.0 # https://pub.dev/packages/package_info_plus
   permission_handler: ^11.0.1 # https://pub.dev/packages/permission_handler
   shared_preferences: ^2.2.1 # https://pub.dev/packages/shared_preferences
+  share_plus: ^7.1.0 # https://pub.dev/packages/share_plus
   scrollable_positioned_list: ^0.3.8 # https://pub-web.flutter-io.cn/packages/scrollable_positioned_list
   flutter_secure_storage: ^9.0.0 # https://pub.dev/packages/flutter_secure_storage
   flutter_svg: ^2.0.7 # https://pub.dev/packages/flutter_svg
