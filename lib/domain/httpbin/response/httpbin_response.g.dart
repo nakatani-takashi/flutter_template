@@ -6,8 +6,9 @@ part of 'httpbin_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_HttpBinResponse _$$_HttpBinResponseFromJson(Map<String, dynamic> json) =>
-    _$_HttpBinResponse(
+_$HttpBinResponseImpl _$$HttpBinResponseImplFromJson(
+        Map<String, dynamic> json) =>
+    _$HttpBinResponseImpl(
       args: Map<String, String>.from(json['args'] as Map),
       headers: Map<String, String>.from(json['headers'] as Map),
       form: (json['form'] as Map<String, dynamic>?)?.map(
@@ -21,7 +22,8 @@ _$_HttpBinResponse _$$_HttpBinResponseFromJson(Map<String, dynamic> json) =>
       url: json['url'] as String,
     );
 
-Map<String, dynamic> _$$_HttpBinResponseToJson(_$_HttpBinResponse instance) =>
+Map<String, dynamic> _$$HttpBinResponseImplToJson(
+        _$HttpBinResponseImpl instance) =>
     <String, dynamic>{
       'args': instance.args,
       'headers': instance.headers,

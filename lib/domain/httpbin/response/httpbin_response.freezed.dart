@@ -107,11 +107,11 @@ class _$HttpBinResponseCopyWithImpl<$Res, $Val extends HttpBinResponse>
 }
 
 /// @nodoc
-abstract class _$$_HttpBinResponseCopyWith<$Res>
+abstract class _$$HttpBinResponseImplCopyWith<$Res>
     implements $HttpBinResponseCopyWith<$Res> {
-  factory _$$_HttpBinResponseCopyWith(
-          _$_HttpBinResponse value, $Res Function(_$_HttpBinResponse) then) =
-      __$$_HttpBinResponseCopyWithImpl<$Res>;
+  factory _$$HttpBinResponseImplCopyWith(_$HttpBinResponseImpl value,
+          $Res Function(_$HttpBinResponseImpl) then) =
+      __$$HttpBinResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -125,11 +125,11 @@ abstract class _$$_HttpBinResponseCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_HttpBinResponseCopyWithImpl<$Res>
-    extends _$HttpBinResponseCopyWithImpl<$Res, _$_HttpBinResponse>
-    implements _$$_HttpBinResponseCopyWith<$Res> {
-  __$$_HttpBinResponseCopyWithImpl(
-      _$_HttpBinResponse _value, $Res Function(_$_HttpBinResponse) _then)
+class __$$HttpBinResponseImplCopyWithImpl<$Res>
+    extends _$HttpBinResponseCopyWithImpl<$Res, _$HttpBinResponseImpl>
+    implements _$$HttpBinResponseImplCopyWith<$Res> {
+  __$$HttpBinResponseImplCopyWithImpl(
+      _$HttpBinResponseImpl _value, $Res Function(_$HttpBinResponseImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -143,7 +143,7 @@ class __$$_HttpBinResponseCopyWithImpl<$Res>
     Object? origin = null,
     Object? url = null,
   }) {
-    return _then(_$_HttpBinResponse(
+    return _then(_$HttpBinResponseImpl(
       args: null == args
           ? _value._args
           : args // ignore: cast_nullable_to_non_nullable
@@ -178,10 +178,10 @@ class __$$_HttpBinResponseCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_HttpBinResponse
+class _$HttpBinResponseImpl
     with DiagnosticableTreeMixin
     implements _HttpBinResponse {
-  _$_HttpBinResponse(
+  _$HttpBinResponseImpl(
       {required final Map<String, String> args,
       required final Map<String, String> headers,
       final Map<String, String>? form,
@@ -194,8 +194,8 @@ class _$_HttpBinResponse
         _form = form,
         _files = files;
 
-  factory _$_HttpBinResponse.fromJson(Map<String, dynamic> json) =>
-      _$$_HttpBinResponseFromJson(json);
+  factory _$HttpBinResponseImpl.fromJson(Map<String, dynamic> json) =>
+      _$$HttpBinResponseImplFromJson(json);
 
   final Map<String, String> _args;
   @override
@@ -272,7 +272,7 @@ class _$_HttpBinResponse
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_HttpBinResponse &&
+            other is _$HttpBinResponseImpl &&
             const DeepCollectionEquality().equals(other._args, _args) &&
             const DeepCollectionEquality().equals(other._headers, _headers) &&
             const DeepCollectionEquality().equals(other._form, _form) &&
@@ -297,12 +297,13 @@ class _$_HttpBinResponse
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_HttpBinResponseCopyWith<_$_HttpBinResponse> get copyWith =>
-      __$$_HttpBinResponseCopyWithImpl<_$_HttpBinResponse>(this, _$identity);
+  _$$HttpBinResponseImplCopyWith<_$HttpBinResponseImpl> get copyWith =>
+      __$$HttpBinResponseImplCopyWithImpl<_$HttpBinResponseImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_HttpBinResponseToJson(
+    return _$$HttpBinResponseImplToJson(
       this,
     );
   }
@@ -316,10 +317,10 @@ abstract class _HttpBinResponse implements HttpBinResponse {
       final String? data,
       final Map<String, String>? files,
       required final String origin,
-      required final String url}) = _$_HttpBinResponse;
+      required final String url}) = _$HttpBinResponseImpl;
 
   factory _HttpBinResponse.fromJson(Map<String, dynamic> json) =
-      _$_HttpBinResponse.fromJson;
+      _$HttpBinResponseImpl.fromJson;
 
   @override
   Map<String, String> get args;
@@ -337,6 +338,6 @@ abstract class _HttpBinResponse implements HttpBinResponse {
   String get url;
   @override
   @JsonKey(ignore: true)
-  _$$_HttpBinResponseCopyWith<_$_HttpBinResponse> get copyWith =>
+  _$$HttpBinResponseImplCopyWith<_$HttpBinResponseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
