@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  animations: ^2.0.8 # https://pub.dev/packages/animations
   app_settings: ^5.1.1 # https://pub.dev/packages/app_settings
   auto_size_text: ^3.0.0 # https://pub.dev/packages/auto_size_text
   cupertino_icons: 
