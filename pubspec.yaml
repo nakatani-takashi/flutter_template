@@ -43,6 +43,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/fonts/
+    - assets/svgs/
+    - assets/splashes/
+    
   fonts:
     - family: NotoSansJP
       fonts:
@@ -69,37 +73,37 @@ flutter_launcher_icons:
   # flutter pub run flutter_launcher_icons:main
   android: true
   ios: true
-  image_path: "assets/images/template.png"
+  image_path: "assets/splashes/template.png"
   adaptive_icon_background: "#eeeeee"
-  adaptive_icon_foreground: "assets/images/template.png"
+  adaptive_icon_foreground: "assets/splashes/template.png"
   web:
     generate: true
-    image_path: "assets/images/template.png"
+    image_path: "assets/splashes/template.png"
     background_color: "#eeeeee"
     theme_color: "#eeeeee"
   windows:
     generate: true
-    image_path: "assets/images/template.png"
+    image_path: "assets/splashes/template.png"
     icon_size: 48 # min:48, max:256, default: 48
   macos:
     generate: true
-    image_path: "assets/images/template.png"
+    image_path: "assets/splashes/template.png"
 
 flutter_native_splash:
   # flutter pub run flutter_native_splash:create
   # flutter pub run flutter_native_splash:remove
   color: "#eeeeee"
-  image: "assets/images/template.png"
+  image: "assets/splashes/template.png"
   color_dark: "#262626"
-  image_dark: "assets/images/template.png"
-  branding: "assets/images/branding.png"
+  image_dark: "assets/splashes/template.png"
+  branding: "assets/splashes/branding.png"
   branding_mode: bottom
 
   # Android12以上はAndroidOS側でアプリアイコンをスプラッシュ表示してしまうので以下の通り設定が必要
   android_12:
-    image: "assets/images/template.png"
+    image: "assets/splashes/template.png"
     icon_background_color: "#eeeeee"
-    image_dark: "assets/images/template.png"
+    image_dark: "assets/splashes/template.png"
     icon_background_color_dark: "#262626"
-    branding: "assets/images/branding.png"
+    branding: "assets/splashes/branding.png"
     branding_mode: bottom
