@@ -1,5 +1,11 @@
 # flutter_template
 
+## コマンド
+
+- コマンドはMakefileに集約している
+    - flutter_template/Makefile
+- コマンドが増えた時はこちらに集約することを検討する
+
 ## 環境構築
 
 - コーディング規約
