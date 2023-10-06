@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/const/core/theme.dart';
 import 'package:flutter_template/presentation/navigation/animation/platform_animation.dart';
 import 'package:flutter_template/provider/navigation/go_router_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -15,6 +16,7 @@ class App extends ConsumerWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         pageTransitionsTheme: platformAnimation,
+        fontFamily: ThemeConst.jpFont,
       ),
       routerConfig: router,
     );
