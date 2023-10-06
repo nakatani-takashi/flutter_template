@@ -17,7 +17,6 @@ Future<dynamic> main() async {
   //https://api.flutter.dev/flutter/widgets/WidgetsFlutterBinding-class.html
   //https://qiita.com/kurun_pan/items/04f34a47cc8cee0fe542
   WidgetsFlutterBinding.ensureInitialized();
-
   await _initialize();
   runApp(const ProviderScope(child: App()));
 }

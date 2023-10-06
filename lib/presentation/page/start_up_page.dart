@@ -15,8 +15,7 @@ class StartUpPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    /// currentRouteを活性化させる
-    ref.watch(currentRouteStateProvider);
+   
     final asyncValue = ref.watch(getHttpbinResponseProvider('hogehoge'));
     final usecase = ref.watch(httpbinControllerProvider.notifier);
     final usecaseState = ref.watch(httpbinControllerProvider);
@@ -25,48 +24,81 @@ class StartUpPage extends ConsumerWidget {
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       userToken.updateToken('updateToken');
-      asyncValue.when(
-        data: (data) => {logger.i('success: $data')},
-        error: (error, _) => {logger.w('error: $error')},
-        loading: () => {logger.i('loading: loading')},
-      );
+      // asyncValue.when(
+      //   data: (data) => {logger.i('success: $data')},
+      //   error: (error, _) => {logger.w('error: $error')},
+      //   loading: () => {logger.i('loading: loading')},
+      // );
 
-      usecaseState.when(
-        data: (data) => {logger.i('usecase: success')},
-        error: (error, _) => {logger.w('usecase: error: $error')},
-        loading: () => {logger.i('usecase: loading')},
-      );
+      // usecaseState.when(
+      //   data: (data) => {logger.i('usecase: success')},
+      //   error: (error, _) => {logger.w('usecase: error: $error')},
+      //   loading: () => {logger.i('usecase: loading')},
+      // );
+      // checkAnyTrue([asyncValue.isLoading, usecaseState.isLoading], ref);
     });
-    checkAnyTrue([asyncValue.isLoading, usecaseState.isLoading], ref);
 
-    return Scaffold(
-      body: Center(
-        child: Stack(
-          children: [
-            ElevatedButton(
-              child: const Text(
-                '直感的に気付く、認証する',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {
-                // usecase.errorHttpBin();
-                MainPage.go(context);
-              },
+    return Stack(
+      children: [
+        Scaffold(
+          body: Center(
+            child: Stack(
+              children: [
+                ElevatedButton(
+                  child: asyncValue.when(
+                    data: (data) => const Text(
+                      'success',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    error: (error, _) => const Text(
+                      'error',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    loading: () => const Text(
+                      'loading',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  onPressed: () {
+                    usecase.postHttpBin('cfrytgui');
+                    // MainPage.go(context);
+                  },
+                ),
+                if (loadingState) const CircularProgressIndicator(),
+              ],
             ),
-            if (loadingState) const CircularProgressIndicator(),
-          ],
+          ),
         ),
-      ),
+        // LoadinStateUpdateWidget(asyncValue: asyncValue),
+        LoadinStateUpdateWidget(asyncValue: usecaseState),
+      ],
     );
   }
 }
 
-void checkAnyTrue(List<bool> boolList, WidgetRef ref) {
-  final notifier = ref.watch(loadingStateProvider.notifier);
-  for (final value in boolList) {
-    if (value) {
-      return notifier.show();
-    }
+class LoadinStateUpdateWidget extends ConsumerWidget {
+  const LoadinStateUpdateWidget({super.key, required this.asyncValue});
+  final AsyncValue<dynamic> asyncValue;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final notifier = ref.watch(loadingStateProvider.notifier);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      asyncValue.when(
+        data: (data) => {
+          logger.i('success: $data'),
+          notifier.hide(),
+        },
+        error: (error, _) => {
+          logger.w('error: $error'),
+          notifier.hide(),
+        },
+        loading: () => {
+          logger.i('loading: loading'),
+          notifier.show(),
+        },
+      );
+    });
+    return const SizedBox.shrink();
   }
-  return notifier.hide();
 }
