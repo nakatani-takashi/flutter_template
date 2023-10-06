@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "debug",
-            "preLaunchTask": "buildRunner",
+            "preLaunchTask": "make",
             "args": [
                 "--dart-define-from-file=dart_defines/dev.json"
             ]
@@ -16,7 +16,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "debug",
-            "preLaunchTask": "buildRunner",
+            "preLaunchTask": "make",
             "args": [
                 "--dart-define-from-file=dart_defines/stg.json"
             ]
@@ -26,7 +26,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "debug",
-            "preLaunchTask": "buildRunner",
+            "preLaunchTask": "make",
             "args": [
                 "--dart-define-from-file=dart_defines/prod.json"
             ]
@@ -36,7 +36,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
-            "preLaunchTask": "buildRunner",
+            "preLaunchTask": "make",
             "args": [
                 "--dart-define-from-file=dart_defines/dev.json"
             ]
@@ -46,7 +46,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
-            "preLaunchTask": "buildRunner",
+            "preLaunchTask": "make",
             "args": [
                 "--dart-define-from-file=dart_defines/stg.json"
             ]
@@ -56,7 +56,7 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
-            "preLaunchTask": "buildRunner",
+            "preLaunchTask": "make",
             "args": [
                 "--dart-define-from-file=dart_defines/prod.json"
             ]
