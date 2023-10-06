@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/presentation/navigation/tab2_route.dart';
-import 'package:flutter_template/presentation/page/start_up_page.dart';
+import 'package:flutter_template/presentation/ui/start_up/start_up_page.dart';
 import 'package:go_router/go_router.dart';
 
 import 'attention_route.dart';
