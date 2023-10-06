@@ -24,14 +24,16 @@ class StartUpPage extends ConsumerWidget {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       userToken.updateToken('updateToken');
       asyncValue.when(
-          data: (data) => {logger.i('success: $data')},
-          error: (error, _) => {logger.w('error: $error')},
-          loading: () => {logger.i('loading: loading')},);
+        data: (data) => {logger.i('success: $data')},
+        error: (error, _) => {logger.w('error: $error')},
+        loading: () => {logger.i('loading: loading')},
+      );
 
       usecaseState.when(
-          data: (data) => {logger.i('usecase: success')},
-          error: (error, _) => {logger.w('usecase: error: $error')},
-          loading: () => {logger.i('usecase: loading')},);
+        data: (data) => {logger.i('usecase: success')},
+        error: (error, _) => {logger.w('usecase: error: $error')},
+        loading: () => {logger.i('usecase: loading')},
+      );
     });
 
     return Scaffold(
