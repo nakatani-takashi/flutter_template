@@ -10,15 +10,15 @@ void loadingStateUpdater({
   for (final asyncValue in asyncValueList) {
     asyncValue.when(
       data: (data) => {
-        logger.i('success: ${asyncValue.asData}: $data'),
+        logger.i('success: ${asyncValue.runtimeType}: $data'),
         notifier.hide(),
       },
       error: (error, _) => {
-        logger.w('error: ${asyncValue.asData}: $error'),
+        logger.w('error: ${asyncValue.runtimeType}: $error'),
         notifier.hide(),
       },
       loading: () => {
-        logger.i('loading: ${asyncValue.asData}'),
+        logger.i('loading: ${asyncValue.runtimeType}'),
         notifier.show(),
       },
     );
