@@ -15,8 +15,8 @@ class StartUpPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final asyncValue = ref.watch(getHttpbinResponseProvider('hogehoge'));
-    final usecase = ref.watch(httpbinControllerProvider.notifier);
-    final usecaseState = ref.watch(httpbinControllerProvider);
+    final usecase = ref.watch(httpbinUseCaseProvider.notifier);
+    final usecaseState = ref.watch(httpbinUseCaseProvider);
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       loadingStateUpdater(

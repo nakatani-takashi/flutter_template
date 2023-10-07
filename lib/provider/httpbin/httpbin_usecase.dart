@@ -5,7 +5,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'httpbin_usecase.g.dart';
 
 @riverpod
-class HttpbinController extends _$HttpbinController {
+class HttpbinUseCase extends _$HttpbinUseCase {
   HttpBinRepository get _httpBinRepository =>
       ref.read(httpbinRepositoryProvider);
 
