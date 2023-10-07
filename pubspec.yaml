@@ -11,11 +11,11 @@ dependencies:
   flutter:
     sdk: flutter
   animations: ^2.0.8 # https://pub.dev/packages/animations
-  async: ^2.11.0 # https://pub.dev/packages/async
+  async: ^2.11.0 # https://pub.dev/packages/async  参考記事: https://zenn.dev/8rine23/articles/5772f7d81144bd
   app_settings: ^5.1.1 # https://pub.dev/packages/app_settings
   auto_size_text: ^3.0.0 # https://pub.dev/packages/auto_size_text
   cupertino_icons: 
-  collection: ^1.17.2 # https://pub.dev/packages/collection https://zenn.dev/ashphy/articles/1bdfc8e8084fc2
+  collection: ^1.17.2 # https://pub.dev/packages/collection  参考記事: https://zenn.dev/ashphy/articles/1bdfc8e8084fc2
   flutter_native_splash: ^2.3.2 # https://pub.dev/packages/flutter_native_splash
   go_router: ^10.1.1 # https://pub.dev/packages/go_router
   riverpod_annotation: ^2.1.5 # https://pub.dev/packages/riverpod_annotation
