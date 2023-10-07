@@ -9,7 +9,7 @@ part 'start_up_screen_entity.freezed.dart';
 class StartUpScreenEntity with _$StartUpScreenEntity {
   factory StartUpScreenEntity({
     required AsyncValue<HttpBinResponse> httpbinResponse,
-    required Future<void> postAction,
-    required Future<void> goMain,
+    required VoidCallback postAction,
+    required VoidCallback goMain,
   }) = _StartUpScreenEntity;
 }

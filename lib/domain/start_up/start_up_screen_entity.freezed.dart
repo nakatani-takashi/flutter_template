@@ -18,8 +18,8 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$StartUpScreenEntity {
   AsyncValue<HttpBinResponse> get httpbinResponse =>
       throw _privateConstructorUsedError;
-  Future<void> get postAction => throw _privateConstructorUsedError;
-  Future<void> get goMain => throw _privateConstructorUsedError;
+  VoidCallback get postAction => throw _privateConstructorUsedError;
+  VoidCallback get goMain => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $StartUpScreenEntityCopyWith<StartUpScreenEntity> get copyWith =>
@@ -34,8 +34,8 @@ abstract class $StartUpScreenEntityCopyWith<$Res> {
   @useResult
   $Res call(
       {AsyncValue<HttpBinResponse> httpbinResponse,
-      Future<void> postAction,
-      Future<void> goMain});
+      VoidCallback postAction,
+      VoidCallback goMain});
 }
 
 /// @nodoc
@@ -63,11 +63,11 @@ class _$StartUpScreenEntityCopyWithImpl<$Res, $Val extends StartUpScreenEntity>
       postAction: null == postAction
           ? _value.postAction
           : postAction // ignore: cast_nullable_to_non_nullable
-              as Future<void>,
+              as VoidCallback,
       goMain: null == goMain
           ? _value.goMain
           : goMain // ignore: cast_nullable_to_non_nullable
-              as Future<void>,
+              as VoidCallback,
     ) as $Val);
   }
 }
@@ -82,8 +82,8 @@ abstract class _$$StartUpScreenEntityImplCopyWith<$Res>
   @useResult
   $Res call(
       {AsyncValue<HttpBinResponse> httpbinResponse,
-      Future<void> postAction,
-      Future<void> goMain});
+      VoidCallback postAction,
+      VoidCallback goMain});
 }
 
 /// @nodoc
@@ -109,11 +109,11 @@ class __$$StartUpScreenEntityImplCopyWithImpl<$Res>
       postAction: null == postAction
           ? _value.postAction
           : postAction // ignore: cast_nullable_to_non_nullable
-              as Future<void>,
+              as VoidCallback,
       goMain: null == goMain
           ? _value.goMain
           : goMain // ignore: cast_nullable_to_non_nullable
-              as Future<void>,
+              as VoidCallback,
     ));
   }
 }
@@ -131,9 +131,9 @@ class _$StartUpScreenEntityImpl
   @override
   final AsyncValue<HttpBinResponse> httpbinResponse;
   @override
-  final Future<void> postAction;
+  final VoidCallback postAction;
   @override
-  final Future<void> goMain;
+  final VoidCallback goMain;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -177,15 +177,15 @@ class _$StartUpScreenEntityImpl
 abstract class _StartUpScreenEntity implements StartUpScreenEntity {
   factory _StartUpScreenEntity(
       {required final AsyncValue<HttpBinResponse> httpbinResponse,
-      required final Future<void> postAction,
-      required final Future<void> goMain}) = _$StartUpScreenEntityImpl;
+      required final VoidCallback postAction,
+      required final VoidCallback goMain}) = _$StartUpScreenEntityImpl;
 
   @override
   AsyncValue<HttpBinResponse> get httpbinResponse;
   @override
-  Future<void> get postAction;
+  VoidCallback get postAction;
   @override
-  Future<void> get goMain;
+  VoidCallback get goMain;
   @override
   @JsonKey(ignore: true)
   _$$StartUpScreenEntityImplCopyWith<_$StartUpScreenEntityImpl> get copyWith =>
