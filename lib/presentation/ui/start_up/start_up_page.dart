@@ -28,8 +28,8 @@ class StartUpPage extends ConsumerWidget {
     return StartUpScreen(
       startUpScreenEntity: StartUpScreenEntity(
         httpbinResponse: asyncValue,
-        postAction: usecase.postHttpBin('id'),
-        goMain: MainPage.go(context),
+        postAction: () => usecase.postHttpBin('id'),
+        goMain: () => MainPage.go(context),
       ),
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/domain/start_up/start_up_screen_entity.dart';
-import 'package:flutter_template/provider/core/loading_state_provider.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class StartUpScreen extends ConsumerWidget {
@@ -14,33 +13,24 @@ class StartUpScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       body: Center(
-        child: Stack(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            Column(
-              children: [
-                Text(
-                  startUpScreenEntity.httpbinResponse.when(
-                    data: (data) => 'success',
-                    error: (error, _) => 'error',
-                    loading: () => 'loading',
-                  ),
-                ),
-                ElevatedButton(
-                  child: const Text('post action'),
-                  onPressed: () {
-                    startUpScreenEntity.postAction;
-                  },
-                ),
-                ElevatedButton(
-                  child: const Text('go main'),
-                  onPressed: () {
-                    startUpScreenEntity.goMain;
-                  },
-                ),
-              ],
+            Text(
+              startUpScreenEntity.httpbinResponse.when(
+                data: (data) => 'success',
+                error: (error, _) => 'error',
+                loading: () => 'loading',
+              ),
             ),
-            if (ref.watch(loadingStateProvider))
-              const CircularProgressIndicator(),
+            ElevatedButton(
+              child: const Text('post action'),
+              onPressed: () => startUpScreenEntity.postAction(),
+            ),
+            ElevatedButton(
+              child: const Text('go main'),
+              onPressed: () => startUpScreenEntity.goMain(),
+            ),
           ],
         ),
       ),
