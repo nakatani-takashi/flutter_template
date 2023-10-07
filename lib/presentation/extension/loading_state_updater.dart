@@ -7,20 +7,36 @@ void loadingStateUpdater({
   required WidgetRef widgetRef,
 }) {
   final notifier = widgetRef.watch(loadingStateProvider.notifier);
+  _asyncLogger(asyncValueList: asyncValueList);
+  _updater(notifier: notifier, asyncValueList: asyncValueList);
+}
+
+void _asyncLogger({
+  required List<AsyncValue<dynamic>> asyncValueList,
+}) {
   for (final asyncValue in asyncValueList) {
     asyncValue.when(
       data: (data) => {
         logger.i('success: ${asyncValue.runtimeType}: $data'),
-        notifier.hide(),
       },
       error: (error, _) => {
         logger.w('error: ${asyncValue.runtimeType}: $error'),
-        notifier.hide(),
       },
       loading: () => {
         logger.i('loading: ${asyncValue.runtimeType}'),
-        notifier.show(),
       },
     );
   }
+}
+
+void _updater({
+  required LoadingState notifier,
+  required List<AsyncValue<dynamic>> asyncValueList,
+}) {
+  for (final asyncValue in asyncValueList) {
+    if (asyncValue.isLoading) {
+      return notifier.show();
+    }
+  }
+  return notifier.hide();
 }
