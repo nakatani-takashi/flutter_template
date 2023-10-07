@@ -1,3 +1,4 @@
+import 'package:async/async.dart';
 import 'package:flutter_template/data/repository/httpbin_repository.dart';
 import 'package:flutter_template/provider/api/httpbin/httpbin_repository_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -12,13 +13,19 @@ class HttpbinUseCase extends _$HttpbinUseCase {
   @override
   FutureOr<void> build() {}
 
+  final AsyncCache<dynamic> _postCache = AsyncCache.ephemeral();
   Future<void> postHttpBin(String id) async {
-    state = const AsyncLoading();
-    state = await AsyncValue.guard(() => _httpBinRepository.postHttpBin(id));
+    await _postCache.fetch(() async {
+      state = const AsyncLoading();
+      state = await AsyncValue.guard(() => _httpBinRepository.postHttpBin(id));
+    });
   }
 
+  final AsyncCache<dynamic> _errorCache = AsyncCache.ephemeral();
   Future<void> errorHttpBin() async {
-    state = const AsyncLoading();
-    state = await AsyncValue.guard(() => _httpBinRepository.errorHttpBin());
+    await _errorCache.fetch(() async {
+      state = const AsyncLoading();
+      state = await AsyncValue.guard(() => _httpBinRepository.errorHttpBin());
+    });
   }
 }
