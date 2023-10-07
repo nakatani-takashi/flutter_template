@@ -12,11 +12,12 @@ class App extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final loadingState = ref.watch(loadingStateProvider);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      /// currentRouteを活性化させる
+      /// 常に監視させたいProviderを活性化させる
       ref.watch(currentRouteStateProvider);
+      /// userTokenの更新
       ref.watch(userTokenStateProvider.notifier).updateToken('updateToken');
-      ref.watch(loadingStateProvider);
     });
 
     return MaterialApp.router(
@@ -27,6 +28,17 @@ class App extends ConsumerWidget {
         fontFamily: ThemeConst.jpFont,
       ),
       routerConfig: ref.watch(goRouterProvider),
+      builder: (context, child) {
+        return Stack(
+          children: [
+            child!,
+            if (loadingState)
+              const Center(
+                child: CircularProgressIndicator(),
+              ),
+          ],
+        );
+      },
     );
   }
 }
