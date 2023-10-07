@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_template/domain/start_up/start_up_screen_entity.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class StartUpScreen extends ConsumerWidget {
+class StartUpScreen extends StatelessWidget {
   const StartUpScreen({
     super.key,
     required this.startUpScreenEntity,
@@ -10,7 +10,7 @@ class StartUpScreen extends ConsumerWidget {
   final StartUpScreenEntity startUpScreenEntity;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(
