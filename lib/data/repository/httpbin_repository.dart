@@ -1,5 +1,5 @@
 import 'package:flutter_template/data/api/httpbin/abstract_httpbin_api_client.dart';
-import 'package:flutter_template/domain/httpbin/response/httpbin_response.dart';
+import 'package:flutter_template/domain/entity/httpbin/response/httpbin_response.dart';
 
 abstract class _HttpBinRepository {
   Future<HttpBinResponse> getHttpBin(String id);

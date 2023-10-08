@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/domain/start_up/start_up_screen_entity.dart';
+import 'package:flutter_template/domain/ui/start_up/start_up_screen_entity.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class StartUpScreen extends StatelessWidget {

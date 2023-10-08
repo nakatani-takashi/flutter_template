@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/domain/start_up/start_up_screen_entity.dart';
+import 'package:flutter_template/domain/ui/start_up/start_up_screen_entity.dart';
 import 'package:flutter_template/presentation/extension/loading_state_updater.dart';
 import 'package:flutter_template/presentation/navigation/main_route.dart';
 import 'package:flutter_template/presentation/ui/start_up/start_up_screen.dart';
@@ -19,6 +19,8 @@ class StartUpPage extends ConsumerWidget {
     final usecaseState = ref.watch(httpbinUseCaseProvider);
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      ///to-do: Screenに渡すasyncValueを全てloadingStateUpdaterに渡す
+      /// 使うasyncValueを全て渡すことでLoadingStateが自動更新される
       loadingStateUpdater(
         asyncValueList: [asyncValue, usecaseState],
         widgetRef: ref,

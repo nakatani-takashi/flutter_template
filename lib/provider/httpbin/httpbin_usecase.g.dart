@@ -6,7 +6,7 @@ part of 'httpbin_usecase.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$httpbinUseCaseHash() => r'4d04862367d46fb237f7f1274eb6e8d541f63cb2';
+String _$httpbinUseCaseHash() => r'3a28b824f7d50f6e618d3920d5df1df2cb708037';
 
 /// See also [HttpbinUseCase].
 @ProviderFor(HttpbinUseCase)
