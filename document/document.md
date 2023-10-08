@@ -1,84 +1,99 @@
-## アーキテクチャ構成
+## ドキュメント
 
-- lib
-    - const
-        - 定数管理
+- コーディング規約
+    - 明確なものはない
+    - linterとしてpedantic_monoを入れてるのでそこに沿えばという感じ
+    - その他参考記事
+        - https://qiita.com/simonritchie/items/daa7c58778660696417e
 
-    -  data
-        - local
-            - ローカルストレージ管理
+- ナビゲーション
+    - go_router + go_router_builder
+        - https://pub.dev/packages/go_router
+        - https://pub.dev/packages/go_router_builder
+    - ボトムナビゲーション実装の参考元
+        - https://github.com/hukusuke1007/go_router_sample
+        - https://codewithandrea.com/articles/flutter-bottom-navigation-bar-nested-routes-gorouter/
+        - https://zenn.dev/flutteruniv_dev/articles/20220801-135028-flutter-go-router-builder
 
-        - api
-            - api管理
+        - https://zenn.dev/pside/articles/9194274980bf76
+            - やれたらいいけどできなかった(言語仕様が変わった？？)
+    - 型安全な値渡し遷移
+        - https://pub.dev/documentation/go_router/latest/topics/Type-safe%20routes-topic.html
+    - 参考記事
+        - https://migisanblog.com/flutter-go-router-use/
 
-        - repository
-            - リポジトリ置き場
-            - 各レイヤー毎に切る
+- ロガー
+    - logger
+        - https://pub.dev/packages/logger
+    - 他の検討候補
+        - https://zenn.dev/flutteruniv_dev/articles/20220413-153500-flutter-logger
 
-    - domain
-        - core
-            - type
-            - api
-                - retrofit
-        - auth(例)
-            - response
-            - request
+- 状態管理
+    - Riverpod v2
+        - https://docs-v2.riverpod.dev/docs/introduction/why_riverpod
+        - 参考記事
+            - https://zenn.dev/10_tofu_01/articles/try_riverpod_generator
+            - https://zenn.dev/chmod644/articles/baf559e46a0794
+            - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction/viewer/introduction
+            - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction-archive
+            - https://zenn.dev/flutteruniv_dev/articles/riverpod_generator_in_action
+            - https://zenn.dev/koji_1009/articles/18a8a54b615ae7
 
-        - ドメイン管理
-        - 各apiレイヤー毎に切る
+    - riverpod_generator
+        - https://pub.dev/packages/riverpod_generator
+        - 参考記事
+            - https://zenn.dev/flutteruniv_dev/articles/riverpod_generator_in_action
+    - freezed
+        - https://pub.dev/packages/freezed
+    - json_serializable
+        - https://pub.dev/packages/json_serializable
 
-    - presentation
-        - navigation
-            - ナビゲーション管理
-            - 各uiレイヤー毎に切る
-        - page
-            - ui管理
-            - 各uiレイヤー毎に切る
-        - theme
-            - テーマ管理
+- api通信
+    - retrofit
+        - https://pub.dev/packages/retrofit
+    - dio
+        - https://pub.dev/packages/dio
+    - 参考記事
+        - https://www.egao-inc.co.jp/tech/flutter_retrofit/
+        - テスト
+            - https://zenn.dev/shimizu_saffle/articles/http-mock-adapter
 
-    - provider
-        - api
-        - core
-        - navigation
-        - 各レイヤー毎に切る
+- ローカルDB
+    - shared_preferences
+        - https://pub.dev/packages/shared_preferences
+        - 参考記事
+            - https://zenn.dev/riscait/books/flutter-riverpod-practical-introduction-archive/viewer/v0-shared-preferences
+            - https://zenn.dev/chmod644/articles/baf559e46a0794
+            - https://blog.dalt.me/2356
+    - flutter_secure_storage
+        - https://pub.dev/packages/flutter_secure_storage
+        - shared_preferencesが平文保存なのでセキュア情報を扱うならこっちを使うしかない
+    - 参考記事
+        - https://medium.com/@mustafatahirhussein/shared-preferences-or-flutter-secure-storage-which-is-better-to-use-e6b6a0a4fcfc
 
-    - util
-        - 汎用的なものの置き場
-        - logger系等
+- ローカルプロパティ
+    - 普通に自作すればいいのでは感がすごい
 
+    - この辺はやってみたもののライブラリ使ってやるほどのことか？？感凄かったのでやめた
+        - flutter_dotenv
+            - https://pub.dev/packages/flutter_dotenv
+        - envied
+            - https://pub.dev/packages/envied
+            - 型安全に呼び出せるのでこっちのが良さそう(変なinit処理もないし)
+                - https://zenn.dev/8rine23/scraps/f097a9505cbe7b
 
-## 命名規則
+- アーキテクチャ
 
-- core
-    - 中核となるもの
-    - 他でいうcommonと同じと思ってもらえればok
+    - 採用
+        - MVC(？)
+                - https://codewithandrea.com/articles/data-mutations-riverpod/
+                - 名前がよくわからんけどこのような感じでやるのがよさそうに感じる
 
-- domain
-    - type
-        - enum・sealed class
-        - 命名例
-            - hoge_type
-    - response・request
-        - apiの送りと返り
-        - 命名例
-            - hoge_request
-
-- provider
-    - 通常のProvider・Future・Stream
-        - entity名で作成
-        - 自動生成ファイルがentity名+Providerになる
-            - riverpod_generaterの仕様
-        - entity名で作成
-
-    - Notifier
-        - entity名+State
-
-    - AsyncNotifier
-        - controller
-            - buildメソッドを使わないでFutureに分割するのであればusecaseで良さそう
-            
-    - ファイル名
-        - 作りたいメソッド名+provider
-            - 例(hogeStateを作る場合)
-                - hoge_state_provider
+    - 不採用(参考になるのでメモ代わりに置いている)
+        - 非MVVM
+            - https://techblog.enechain.com/entry/flutter-rearchitecture-from-mvvm
+                - 結構良さそう、ただ統合しないというのは一つのAPIで完結するのであればいいけど複数のAPIを統合する必要がある場合は統合する必要があるので話半分ぐらいに思った方が良さそう
+        - MVVM
+            - https://wasabeef.medium.com/flutter-%E3%82%92-mvvm-%E3%81%A7%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B-861c5dbcc565
+            - https://terupro.net/flutter-mvvm-riverpod-sample/
+            - https://github.com/terupro/clima
