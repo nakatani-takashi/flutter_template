@@ -7,7 +7,7 @@ part of 'httpbin_usecase_impl.dart';
 // **************************************************************************
 
 String _$httpbinUseCaseImplHash() =>
-    r'25361a1c7bc8a73641107f44394b46c425adfbcb';
+    r'6bfc864b20ff7c116ae135687e2da0e2ee69fc40';
 
 /// See also [HttpbinUseCaseImpl].
 @ProviderFor(HttpbinUseCaseImpl)

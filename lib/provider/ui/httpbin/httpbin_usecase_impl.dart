@@ -1,14 +1,18 @@
 import 'package:async/async.dart';
 import 'package:flutter_template/data/repository/httpbin_repository.dart';
-import 'package:flutter_template/domain/usecase/httpbin/httpbin_usecase.dart';
 import 'package:flutter_template/provider/api/httpbin/httpbin_repository_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'httpbin_usecase_impl.g.dart';
 
+abstract class _HttpbinUseCase {
+  Future<void> postHttpBin(String id);
+  Future<void> errorHttpBin();
+}
+
 @riverpod
 class HttpbinUseCaseImpl extends _$HttpbinUseCaseImpl
-    implements HttpbinUseCase {
+    implements _HttpbinUseCase {
   HttpBinRepository get _httpBinRepository =>
       ref.read(httpbinRepositoryProvider);
 
