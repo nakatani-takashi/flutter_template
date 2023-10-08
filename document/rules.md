@@ -8,7 +8,7 @@
     - repository
         - abstractでusecaseを定義し、implementsして動作を強制させる
         - abstractはprivate classで定義し、providerは同名open定義する
-            - [例](lib/data/repository/httpbin_repository.dart)
+            - [例](/lib/data/repository/httpbin_repository.dart)
 
 - domain
     - type
@@ -34,7 +34,7 @@
         - usecase
             - abstractでusecaseを定義し、implementsして動作を強制させる
             - abstractはprivate classで定義し、providerは同名open定義する
-                - [例](lib/provider/ui/httpbin/httpbin_usecase.dart)
+                - [例](/lib/provider/ui/httpbin/httpbin_usecase.dart)
             
     - ファイル名
         - 作りたいメソッド名+provider
