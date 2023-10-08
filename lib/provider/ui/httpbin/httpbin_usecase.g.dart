@@ -1,27 +1,26 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'httpbin_usecase_impl.dart';
+part of 'httpbin_usecase.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$httpbinUseCaseImplHash() =>
-    r'6bfc864b20ff7c116ae135687e2da0e2ee69fc40';
+String _$httpbinUseCaseHash() => r'53fb580bcbfab8644d51dcbf943ef5bc9d44a0c0';
 
-/// See also [HttpbinUseCaseImpl].
-@ProviderFor(HttpbinUseCaseImpl)
-final httpbinUseCaseImplProvider =
-    AutoDisposeAsyncNotifierProvider<HttpbinUseCaseImpl, void>.internal(
-  HttpbinUseCaseImpl.new,
-  name: r'httpbinUseCaseImplProvider',
+/// See also [HttpbinUseCase].
+@ProviderFor(HttpbinUseCase)
+final httpbinUseCaseProvider =
+    AutoDisposeAsyncNotifierProvider<HttpbinUseCase, void>.internal(
+  HttpbinUseCase.new,
+  name: r'httpbinUseCaseProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$httpbinUseCaseImplHash,
+      : _$httpbinUseCaseHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$HttpbinUseCaseImpl = AutoDisposeAsyncNotifier<void>;
+typedef _$HttpbinUseCase = AutoDisposeAsyncNotifier<void>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
