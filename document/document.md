@@ -1,11 +1,5 @@
 ## ドキュメント
 
-- コーディング規約
-    - 明確なものはない
-    - linterとしてpedantic_monoを入れてるのでそこに沿えばという感じ
-    - その他参考記事
-        - https://qiita.com/simonritchie/items/daa7c58778660696417e
-
 - ナビゲーション
     - go_router + go_router_builder
         - https://pub.dev/packages/go_router
