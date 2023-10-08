@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/main.dart';
 import 'package:flutter_template/presentation/navigation/attention_route.dart';
 import 'package:flutter_template/presentation/navigation/router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-
 
 class AttentionPage extends ConsumerWidget {
   const AttentionPage({
@@ -16,31 +14,20 @@ class AttentionPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final count = ref.watch(attentionPageCountProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('AttentionPage'),
         backgroundColor: Colors.indigo,
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'AttentionPage: $count',
+              'AttentionPage',
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        heroTag: null,
-        onPressed: () {
-          ref
-              .read(attentionPageCountProvider.notifier)
-              .update((state) => count + 1);
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }

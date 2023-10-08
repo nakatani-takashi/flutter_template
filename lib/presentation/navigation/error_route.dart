@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/presentation/page/error_page.dart';
+import 'package:flutter_template/presentation/ui/error_page.dart';
 import 'package:go_router/go_router.dart';
 
 class ErrorRoute extends GoRouteData {

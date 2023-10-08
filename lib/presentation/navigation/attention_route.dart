@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_template/presentation/page/attention_page.dart';
+import 'package:flutter_template/presentation/navigation/router.dart';
+import 'package:flutter_template/presentation/ui/attention_page.dart';
 import 'package:go_router/go_router.dart';
-
-import 'router.dart';
 
 class AttentionRoute extends GoRouteData {
   const AttentionRoute();

@@ -5,12 +5,6 @@ import 'package:flutter_template/data/local/shared_preferences/preference_key_ty
 import 'package:flutter_template/data/local/shared_preferences/shared_preferences_instance.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-final tab1PageCountProvider = StateProvider.autoDispose((ref) => 0);
-final tab2PageCountProvider = StateProvider.autoDispose((ref) => 0);
-final secondPageCountProvider = StateProvider.autoDispose((ref) => 0);
-final thirdPageCountProvider = StateProvider.autoDispose((ref) => 0);
-final attentionPageCountProvider = StateProvider.autoDispose((ref) => 0);
-
 Future<dynamic> main() async {
   //to-do: おまじない
   //https://zenn.dev/semapho/articles/7399def07247ec

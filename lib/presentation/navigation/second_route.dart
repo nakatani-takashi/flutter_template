@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/presentation/page/second_page.dart';
+import 'package:flutter_template/presentation/ui/second_page.dart';
 import 'package:go_router/go_router.dart';
 
 class SecondRoute extends GoRouteData {

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/presentation/navigation/router.dart';
+import 'package:flutter_template/presentation/navigation/tab1_route.dart';
+import 'package:flutter_template/presentation/ui/bottom_navigation/bottom_navigation_bar.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-
-import '../page/bottom_navigation/bottom_navigation_bar.dart';
-import 'router.dart';
-import 'tab1_route.dart';
 
 class MainRoute extends StatefulShellRouteData {
   const MainRoute();

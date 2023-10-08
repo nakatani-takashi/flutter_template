@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/main.dart';
-import 'package:flutter_template/presentation/page/attention_page.dart';
-import 'package:flutter_template/presentation/page/second_page.dart';
+import 'package:flutter_template/presentation/ui/attention_page.dart';
+import 'package:flutter_template/presentation/ui/second_page.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class Tab2Page extends ConsumerWidget {
@@ -11,7 +10,6 @@ class Tab2Page extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final count = ref.watch(tab2PageCountProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('タブ2'),
@@ -20,8 +18,8 @@ class Tab2Page extends ConsumerWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'Tab2Page: $count',
+            const Text(
+              'Tab2Page',
             ),
             Padding(
               padding: const EdgeInsets.only(top: 8),
@@ -49,14 +47,6 @@ class Tab2Page extends ConsumerWidget {
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        heroTag: null,
-        onPressed: () {
-          ref.read(tab2PageCountProvider.notifier).update((state) => count + 1);
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
