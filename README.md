@@ -55,3 +55,10 @@
 ## GitFlow
 
 - https://zenn.dev/apple_nktn/articles/3ad61e370d743c
+- [コミットルール](https://qiita.com/konatsu_p/items/dfe199ebe3a7d2010b3e)
+    - ベースはこちらだがここまで細分化すると面倒なので
+        - feature: 新しい機能追加
+        - refactor: リファクタ
+        - fix: バグ修正
+        - update: 既存機能の改修
+    - ぐらいの間で大丈夫です
