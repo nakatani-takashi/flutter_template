@@ -1,5 +1,9 @@
 ## ドキュメント
 
+- UI
+    - [未完】FlutterUIを極める](https://zenn.dev/cxj/books/07def04506182d)
+        - 色々載ってて参考になりそう
+
 - ナビゲーション
     - go_router + go_router_builder
         - https://pub.dev/packages/go_router
@@ -13,7 +17,7 @@
             - やれたらいいけどできなかった(言語仕様が変わった？？)
                 - 対応した[routers](/lib/presentation/navigation/routers)
                 - どうやらpart分けしなくてもできるようになったみたい
-                
+
     - 型安全な値渡し遷移
         - https://pub.dev/documentation/go_router/latest/topics/Type-safe%20routes-topic.html
     - 参考記事
