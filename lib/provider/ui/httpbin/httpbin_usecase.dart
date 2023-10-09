@@ -11,8 +11,7 @@ abstract class _HttpbinUseCase {
 }
 
 @riverpod
-class HttpbinUseCase extends _$HttpbinUseCase
-    implements _HttpbinUseCase {
+class HttpbinUseCase extends _$HttpbinUseCase implements _HttpbinUseCase {
   HttpBinRepository get _httpBinRepository =>
       ref.read(httpbinRepositoryProvider);
 
@@ -22,18 +21,18 @@ class HttpbinUseCase extends _$HttpbinUseCase
   final AsyncCache<dynamic> _postCache = AsyncCache.ephemeral();
   @override
   Future<void> postHttpBin(String id) async {
-    await _postCache.fetch(() async {
-      state = const AsyncLoading();
-      state = await AsyncValue.guard(() => _httpBinRepository.postHttpBin(id));
-    });
+    state = const AsyncLoading();
+    state = await AsyncValue.guard(
+      () => _postCache.fetch(() => _httpBinRepository.postHttpBin(id)),
+    );
   }
 
   final AsyncCache<dynamic> _errorCache = AsyncCache.ephemeral();
   @override
   Future<void> errorHttpBin() async {
-    await _errorCache.fetch(() async {
-      state = const AsyncLoading();
-      state = await AsyncValue.guard(() => _httpBinRepository.errorHttpBin());
-    });
+    state = const AsyncLoading();
+    state = await AsyncValue.guard(
+      () => _errorCache.fetch(() => _httpBinRepository.errorHttpBin()),
+    );
   }
 }
