@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_template/domain/ui/template/template_screen_entity.dart';
 import 'package:flutter_template/presentation/extension/loading_state_updater.dart';
 import 'package:flutter_template/presentation/navigation/main_route.dart';
-import 'package:flutter_template/presentation/navigation/router.dart';
+import 'package:flutter_template/presentation/navigation/routers/router.dart';
 import 'package:flutter_template/presentation/navigation/third_route.dart';
 import 'package:flutter_template/presentation/ui/template/template_screen.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';

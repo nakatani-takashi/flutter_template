@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_template/presentation/navigation/error_route.dart';
-import 'package:flutter_template/presentation/navigation/router.dart';
+import 'package:flutter_template/presentation/navigation/routers/router.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

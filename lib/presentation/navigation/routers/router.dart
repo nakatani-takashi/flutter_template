@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/presentation/navigation/attention_route.dart';
+import 'package:flutter_template/presentation/navigation/main_route.dart';
+import 'package:flutter_template/presentation/navigation/routers/tab1_branch.dart';
+import 'package:flutter_template/presentation/navigation/routers/tab2_branch.dart';
+import 'package:flutter_template/presentation/navigation/second_route.dart';
+import 'package:flutter_template/presentation/navigation/tab1_route.dart';
 import 'package:flutter_template/presentation/navigation/tab2_route.dart';
+import 'package:flutter_template/presentation/navigation/third_route.dart';
 import 'package:flutter_template/presentation/ui/start_up/start_up_page.dart';
 import 'package:go_router/go_router.dart';
-
-import 'attention_route.dart';
-import 'main_route.dart';
-import 'second_route.dart';
-import 'tab1_route.dart';
-import 'third_route.dart';
 
 part 'router.g.dart';
 
@@ -22,22 +23,8 @@ final tab2NavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'tab2');
   routes: [
     TypedStatefulShellRoute<MainRoute>(
       branches: <TypedStatefulShellBranch<StatefulShellBranchData>>[
-        TypedStatefulShellBranch<BranchAData>(
-          routes: <TypedRoute<RouteData>>[
-            TypedGoRoute<Tab1Route>(
-              path: 'tab1_page',
-              name: 'tab1_page',
-            ),
-          ],
-        ),
-        TypedStatefulShellBranch<BranchBData>(
-          routes: <TypedRoute<RouteData>>[
-            TypedGoRoute<Tab2Route>(
-              path: 'tab2_page',
-              name: 'tab2_page',
-            ),
-          ],
-        ),
+        tab1Branch,
+        tab2Branch,
       ],
     ),
     TypedGoRoute<SecondRoute>(

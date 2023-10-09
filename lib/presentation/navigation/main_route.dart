@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/presentation/navigation/router.dart';
+import 'package:flutter_template/presentation/navigation/routers/router.dart';
 import 'package:flutter_template/presentation/navigation/tab1_route.dart';
 import 'package:flutter_template/presentation/ui/bottom_navigation/bottom_navigation_bar.dart';
 import 'package:go_router/go_router.dart';
