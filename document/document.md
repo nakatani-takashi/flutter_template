@@ -3,6 +3,8 @@
 - UI
     - [未完】FlutterUIを極める](https://zenn.dev/cxj/books/07def04506182d)
         - 色々載ってて参考になりそう
+    - ページネーション参考
+        - https://zenn.dev/k9i/articles/b8c333e1bb8b9b
 
 - ナビゲーション
     - go_router + go_router_builder
@@ -49,6 +51,9 @@
     - json_serializable
         - https://pub.dev/packages/json_serializable
 
+    - json_serializableとretrofit_generatorの自動生成順でtoJSONが生えない問題の解決法
+        - https://github.com/trevorwang/retrofit.dart/issues/609
+
 - api通信
     - retrofit
         - https://pub.dev/packages/retrofit
@@ -94,6 +99,9 @@
         - 非MVVM
             - https://techblog.enechain.com/entry/flutter-rearchitecture-from-mvvm
                 - 結構良さそう、ただ統合しないというのは一つのAPIで完結するのであればいいけど複数のAPIを統合する必要がある場合は統合する必要があるので話半分ぐらいに思った方が良さそう
+                    - 無理に統合するのではなくrepositoryを適切に切るのが良さそう
+                - paginationの参考にもなる
+
         - MVVM
             - https://wasabeef.medium.com/flutter-%E3%82%92-mvvm-%E3%81%A7%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B-861c5dbcc565
             - https://terupro.net/flutter-mvvm-riverpod-sample/
