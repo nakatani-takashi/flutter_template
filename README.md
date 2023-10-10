@@ -44,6 +44,12 @@
     - adaptive_icon_backgroundにはアプリアイコンに設定した画像の背景色と同じ色を設定
         - https://pub.dev/packages/flutter_launcher_icons
 
+## ログ出力
+
+- 集約しているのでアナリティクスを実装するならここで可能
+    - [api](lib/presentation/extension/loading_state_updater.dart)
+    - [navigation](lib/presentation/extension/loading_state_updater.dart)
+
 ## アーキテクチャ構成
 
 - [アーキテクチャ](document/architecture.md)

@@ -1,4 +1,4 @@
-## ドキュメント
+## 参考資料
 
 - UI
     - [未完】FlutterUIを極める](https://zenn.dev/cxj/books/07def04506182d)
