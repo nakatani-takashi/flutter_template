@@ -3,8 +3,9 @@
 - UI
     - [未完】FlutterUIを極める](https://zenn.dev/cxj/books/07def04506182d)
         - 色々載ってて参考になりそう
-    - ページネーション参考
-        - https://zenn.dev/k9i/articles/b8c333e1bb8b9b
+    - [ページネーション参考](https://zenn.dev/k9i/articles/b8c333e1bb8b9b)
+    - [snackbar](https://flutter.salon/flutter/snackbar/)
+    - [AsyncValue を使ってローディング表示、ダイアログ表示、スナックバー表示の共通化をしてみた](https://zenn.dev/flutteruniv_dev/articles/20221214-090833-flutter-async-value)
 
 - ナビゲーション
     - go_router + go_router_builder
