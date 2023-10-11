@@ -24,13 +24,14 @@ class StartUpPage extends ConsumerWidget {
       loadingStateUpdater(
         asyncValueList: [asyncValue, usecaseState],
         widgetRef: ref,
+        context: context,
       );
     });
 
     return StartUpScreen(
       startUpScreenEntity: StartUpScreenEntity(
         httpbinResponse: asyncValue,
-        postAction: () => usecase.postHttpBin('id'),
+        postAction: usecase.errorHttpBin,
         goMain: () => MainPage.go(context),
       ),
     );

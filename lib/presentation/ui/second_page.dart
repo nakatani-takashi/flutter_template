@@ -32,6 +32,7 @@ class SecondPage extends ConsumerWidget {
       loadingStateUpdater(
         asyncValueList: [],
         widgetRef: ref,
+        context: context,
       );
     });
 
