@@ -6,6 +6,10 @@
     - [ページネーション参考](https://zenn.dev/k9i/articles/b8c333e1bb8b9b)
     - [snackbar](https://flutter.salon/flutter/snackbar/)
     - [AsyncValue を使ってローディング表示、ダイアログ表示、スナックバー表示の共通化をしてみた](https://zenn.dev/flutteruniv_dev/articles/20221214-090833-flutter-async-value)
+    - [OSシステム設定画面](https://qiita.com/ling350181/items/c4726b57e8b00a266174)
+    - [カメラ機能](https://zenn.dev/mamushi/articles/flutter_camera)
+    - [地図パッケージを比較してみた](https://zenn.dev/odaken/articles/615f12930c7f5d)
+    - [詳解 TableCalendar](https://zenn.dev/rafekun/articles/0d91235356ac2a)
 
 - ナビゲーション
     - go_router + go_router_builder
