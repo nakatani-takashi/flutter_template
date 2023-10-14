@@ -17,8 +17,8 @@ dependencies:
   cupertino_icons: 
   collection: ^1.17.2 # https://pub.dev/packages/collection  参考記事: https://zenn.dev/ashphy/articles/1bdfc8e8084fc2
   flutter_native_splash: ^2.3.2 # https://pub.dev/packages/flutter_native_splash
-  go_router: ^10.1.1 # https://pub.dev/packages/go_router
-  riverpod_annotation: ^2.1.5 # https://pub.dev/packages/riverpod_annotation
+  go_router: ^11.1.4 # https://pub.dev/packages/go_router
+  riverpod_annotation: ^2.2.0 # https://pub.dev/packages/riverpod_annotation
   freezed_annotation: ^2.4.1 # https://pub.dev/packages/freezed_annotation
   json_annotation: ^4.8.1 # https://pub.dev/packages/json_annotation
   hooks_riverpod: ^2.4.0 # https://pub.dev/packages/hooks_riverpod
@@ -41,14 +41,14 @@ dev_dependencies:
     sdk: flutter
   pedantic_mono: ^1.24.0+1 # https://pub.dev/packages/pedantic_mono
   flutter_launcher_icons: "^0.13.1" # https://pub.dev/packages/flutter_launcher_icons
-  go_router_builder: ^2.3.0 # https://pub.dev/packages/go_router_builder
+  go_router_builder: ^2.3.3 # https://pub.dev/packages/go_router_builder
   build_runner: ^2.4.6 # https://pub.dev/packages/build_runner
-  riverpod_generator: ^2.3.2 # https://pub.dev/packages/riverpod_generator
+  riverpod_generator: ^2.3.3 # https://pub.dev/packages/riverpod_generator
   custom_lint: ^0.5.3 # riverpod_lintを使うために入っている https://pub.dev/packages/custom_lint
-  riverpod_lint: ^2.0.4 # https://pub.dev/packages/riverpod_lint
+  riverpod_lint: ^2.1.1 # https://pub.dev/packages/riverpod_lint
   json_serializable: ^6.7.1 # https://pub.dev/packages/json_serializable
   freezed: ^2.4.1 # https://pub.dev/packages/freezed
-  retrofit_generator: ^7.0.8 # https://pub.dev/packages/retrofit_generator
+  retrofit_generator: ^8.0.1 # https://pub.dev/packages/retrofit_generator
 
 flutter:
   uses-material-design: true
