@@ -23,3 +23,7 @@ clean:
 update_splash:
 	flutter pub run flutter_native_splash:remove
 	flutter pub run flutter_native_splash:create
+
+.PHONY: riverpod_graph
+riverpod_graph:
+	dart pub global run riverpod_graph:riverpod_graph > graph.md

@@ -53,6 +53,9 @@
 ## アーキテクチャ構成
 
 - [アーキテクチャ](document/architecture.md)
+- [riverpod_graph](graph.md)
+    - [参考資料](https://qiita.com/isekiryu/items/8311756735234c4e445a)
+
 
 ## 参考資料
 
