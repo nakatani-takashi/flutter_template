@@ -1,4 +1,5 @@
-```mermaidflowchart TB
+```mermaid
+flowchart TB
   subgraph Arrows
     direction LR
     start1[ ] -..->|read| stop1[ ]
