@@ -1,5 +1,4 @@
-Analyzing /Users/nakatani_takashi/AndroidStudioProjects/flutter_template ...
-flowchart TB
+```mermaidflowchart TB
   subgraph Arrows
     direction LR
     start1[ ] -..->|read| stop1[ ]
@@ -39,3 +38,4 @@ flowchart TB
   goRouterProvider ==> currentRouteStateProvider;
   userTokenStateProvider ==> httpbinApiClientProvider;
   httpbinApiClientProvider ==> httpbinRepositoryProvider;
+```

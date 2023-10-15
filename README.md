@@ -53,8 +53,11 @@
 ## アーキテクチャ構成
 
 - [アーキテクチャ](document/architecture.md)
+
 - [riverpod_graph](graph.md)
-    - [参考資料](https://qiita.com/isekiryu/items/8311756735234c4e445a)
+    - 参考資料
+        - https://qiita.com/isekiryu/items/8311756735234c4e445a
+        - https://zenn.dev/noboru_i/articles/ea02828f33deaa
 
 
 ## 参考資料
@@ -77,4 +80,3 @@
 - ファイルチェンジ最大20前後ぐらい目安
     - SDK導入などで大幅な変更がある場合はOK
 - コミット単位も機能単位で細かくお願いします
-- 
