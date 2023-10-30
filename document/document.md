@@ -11,6 +11,12 @@
     - [地図パッケージを比較してみた](https://zenn.dev/odaken/articles/615f12930c7f5d)
     - [詳解 TableCalendar](https://zenn.dev/rafekun/articles/0d91235356ac2a)
 
+- 日本語対応
+    - Flutterの漢字は中華漢字になってしまうので[ここ](../assets/fonts)にフォントを導入してapp.dartで設定している
+        - 各weightの対応は[ここ](../pubspec.yaml)
+        - https://fonts.google.com/noto/specimen/Noto+Sans+JP
+        - https://gaprot.jp/2022/03/28/flutter_dev_bugfix_text/
+
 - ナビゲーション
     - go_router + go_router_builder
         - https://pub.dev/packages/go_router
