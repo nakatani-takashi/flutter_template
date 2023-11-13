@@ -5,10 +5,11 @@
     "source.organizeImports": true,
   },
   "debug.openDebug": "openOnDebugBreak",
+  "debug.toolBarLocation": "commandCenter",
   "editor.rulers": [
     80
   ],
-  // "files.autoSave": "off",
+  // "files.autoSave": "off", // command + Sを強制できるがめんどくさい
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1,
   "editor.renderWhitespace": "all",
